@@ -5,3 +5,4 @@ elasticsearch
 pandas
 scikit-learn
 openai
+streamlit
