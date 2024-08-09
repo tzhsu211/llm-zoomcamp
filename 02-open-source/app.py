@@ -37,7 +37,7 @@ index_setting = {
     }
 }
 index_name = "course-questions"
-es_client.indices.create(index=index_name, body= index_setting)
+#es_client.indices.create(index=index_name, body= index_setting)
 for doc in documents:
     es_client.index(index=index_name, document=doc)
 
@@ -122,9 +122,9 @@ def main():
 
     user_input = st.text_input('Enter your question here:')
 
-    if st.button():
+    if st.button('Ask'):
         with st.spinner('Processing...'):
-            output = rag(user_input)
+            output = rag_es(user_input, doc)
             st.success('Completed!')
             st.write(output)
 
