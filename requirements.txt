@@ -6,3 +6,4 @@ pandas
 scikit-learn
 openai
 streamlit
+python-docx
