@@ -7,3 +7,4 @@ scikit-learn
 openai
 streamlit
 python-docx
+sentence-transformers
