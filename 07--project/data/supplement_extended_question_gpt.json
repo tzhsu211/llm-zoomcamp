@@ -1,0 +1,479 @@
+{
+    "Vitamin C": {
+        "questions": [
+            "I am experiencing gastrointestinal upset and headaches. Could these symptoms be related to a supplement, and are there common dietary recommendations to reduce these issues?",
+            "I have a history of kidney stones. Are there any supplements I should avoid in this case?",
+            "I want to boost my immune system and improve my antioxidant levels. What are common supplements or lifestyle changes that can support these health goals?",
+            "When choosing supplements for immune support and antioxidants, what are the key benefits to consider?",
+            "For someone with kidney stones, what supplements might pose health risks, and how can these risks be effectively managed?"
+        ]
+    },
+    "Vitamin D": {
+        "questions": [
+            "I often feel nauseous and have headaches. Could these symptoms be related to a supplement, and what are some tips to reduce these side effects?",
+            "I have a history of high calcium levels. What supplements should be avoided in this situation?",
+            "I want to improve bone health and enhance my immune system. What are common supplements or lifestyle changes that can achieve these goals?",
+            "When selecting supplements for bone health and immune support, what specific benefits and effects should be noted?",
+            "How can someone with high calcium levels effectively manage bone health? What supplements or methods can avoid potential risks?"
+        ]
+    },
+    "Vitamin E": {
+        "questions": [
+            "I frequently experience nausea and fatigue. Could these symptoms be related to a supplement, and what are some recommendations to reduce these side effects?",
+            "I have a history of bleeding disorders. What supplements should be avoided in this case?",
+            "I want to improve skin health and enhance antioxidant capacity. What are common supplements or methods to achieve these goals?",
+            "When choosing supplements for antioxidant and skin health, what are the key benefits to consider?",
+            "For someone with bleeding disorders, what supplements might pose risks, and how can one choose safe options to support skin health?"
+        ]
+    },
+    "Vitamin B12": {
+        "questions": [
+            "I am experiencing mild diarrhea and frequent headaches. Could these symptoms be related to a supplement, and what steps can I take to alleviate them?",
+            "I have been diagnosed with certain types of anemia. Are there specific supplements I should avoid, and what alternatives might be suitable for me?",
+            "I would like to improve my red blood cell formation and nerve health. What general recommendations do you have for achieving these health goals?",
+            "When considering supplements for red blood cell formation and nerve health, what are the key benefits and potential side effects I should be aware of?",
+            "How can someone with anemia safely include supplements in their diet? Are there particular supplements that are beneficial or harmful?"
+        ]
+    },
+    "Vitamin B6": {
+        "questions": [
+            "I frequently feel nauseous and irritable. Could these symptoms be linked to a supplement, and what can be done to manage these effects?",
+            "I have kidney disease. Are there any specific supplements I should avoid, and what alternatives could support my metabolism and brain health?",
+            "I am interested in improving my metabolism and brain health. What general advice can you provide for supplements that support these areas?",
+            "When selecting supplements for metabolism and brain health, what benefits should I look for, and are there common side effects to watch out for?",
+            "For individuals with kidney disease, what precautions should be taken when considering supplements for brain health and metabolism?"
+        ]
+    },
+    "Calcium": {
+        "questions": [
+            "I often experience constipation and bloating. Could these symptoms be associated with a supplement, and how can they be managed effectively?",
+            "I have high calcium levels. Are there supplements I should avoid, and what are some safe alternatives to support bone health?",
+            "I want to enhance my bone health. What types of supplements or lifestyle changes are recommended to achieve this?",
+            "What are the key benefits of supplements aimed at supporting bone health, and are there any potential side effects to be aware of?",
+            "How can someone with high calcium levels safely manage their bone health? Are there specific supplements or strategies that are advisable?"
+        ]
+    },
+    "Iron": {
+        "questions": [
+            "I frequently experience constipation and stomach pain. Could these symptoms be related to a supplement, and what measures can I take to reduce these effects?",
+            "I have hemochromatosis. Are there supplements I should avoid, and what options are safe for supporting blood production and energy?",
+            "I am looking to improve my blood production and energy levels. What general advice do you have regarding supplements for these purposes?",
+            "When choosing supplements for blood production and energy, what benefits and potential side effects should I be aware of?",
+            "How can individuals with hemochromatosis manage their iron levels effectively while considering supplements for energy and blood production?"
+        ]
+    },
+    "Magnesium": {
+        "questions": [
+            "I often experience diarrhea and abdominal discomfort. Could these symptoms be linked to a supplement, and how can they be managed?",
+            "I have kidney disease. Are there any supplements I should avoid, and what alternatives are recommended for supporting muscle and nerve function?",
+            "I want to improve my muscle and nerve function. What general advice can you provide for supplements or lifestyle changes that support these functions?",
+            "What are the key benefits of supplements for muscle and nerve function, and are there common side effects I should be aware of?",
+            "For someone with kidney disease, what are the safest options for supplements aimed at enhancing muscle and nerve function?"
+        ]
+    },
+    "Zinc": {
+        "questions": [
+            "I am experiencing nausea and a metallic taste in my mouth. Could these symptoms be related to a supplement, and what can I do to manage them?",
+            "I have certain health conditions and am cautious about supplements. What general advice do you have for those with health concerns considering immune function and wound healing supplements?",
+            "I would like to improve my immune function and wound healing. What types of supplements are generally recommended for these purposes?",
+            "What are the potential benefits of supplements aimed at enhancing immune function and wound healing, and what are the common side effects associated with them?",
+            "Are there specific supplements that are suitable for improving immune function and wound healing without causing adverse effects for individuals with health conditions?"
+        ]
+    },
+    "Fish Oil": {
+        "questions": [
+            "I am experiencing a fishy aftertaste and stomach upset. Could these issues be related to a supplement, and how can they be managed?",
+            "I have a fish allergy and am concerned about using supplements. What are some alternative options for supporting heart health and reducing inflammation?",
+            "I want to improve my heart health and manage inflammation. What types of supplements are recommended for these goals?",
+            "What benefits do supplements for heart health and inflammation provide, and are there common side effects I should be aware of?",
+            "For individuals with fish allergies, what are the safest alternatives to fish oil for achieving heart health and managing inflammation?"
+        ]
+    },
+    "Whey Protein": {
+        "questions": [
+            "I often experience gas, bloating, and stomach cramps. Could these symptoms be linked to a supplement, and how can they be addressed?",
+            "I am lactose intolerant and need to be careful with supplements. What alternatives are available for supporting muscle growth and repair?",
+            "I am looking to support muscle growth and repair. What types of supplements or dietary changes are recommended for these purposes?",
+            "What are the benefits of supplements aimed at muscle growth and repair, and what side effects should I be aware of?",
+            "For individuals with lactose intolerance, what are the best supplement options for enhancing muscle growth and repair without causing digestive issues?"
+        ]
+    },
+    "Amino Acids": {
+        "questions": [
+            "I am experiencing gastrointestinal discomfort and headaches. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have liver disease and am cautious about supplements. What general advice can you provide for those with liver conditions considering supplements for muscle repair and growth?",
+            "I want to improve muscle repair and growth. What types of supplements or dietary practices are effective for these goals?",
+            "What benefits do supplements for muscle repair and growth offer, and what common side effects should I be aware of?",
+            "For individuals with liver disease, what are the safest options for supplements that support muscle repair and growth?"
+        ]
+    },
+    "Herbal Extracts": {
+        "questions": [
+            "I am concerned about potential allergic reactions to supplements. How can I identify if an herbal extract might cause an allergy, and what steps can I take to avoid issues?",
+            "I experience varying symptoms with different supplements. How can I determine which herbal extracts are beneficial for general health without adverse effects?",
+            "I would like to improve my overall health using supplements. What types of herbal extracts are generally recommended for this purpose?",
+            "What are the common benefits of herbal extracts for general health, and what potential side effects should I be aware of?",
+            "Are there specific precautions or considerations when using herbal extracts for general health, especially if I have known allergies?"
+        ]
+    },
+    "Grape Seed Extract": {
+        "questions": [
+            "I am experiencing headaches and dizziness. Could these symptoms be related to a supplement, and what can I do to manage them?",
+            "I have certain allergies and am cautious about supplements. What alternatives are available for supporting antioxidant and cardiovascular health?",
+            "I want to enhance my antioxidant levels and support cardiovascular health. What types of supplements are recommended for these goals?",
+            "What benefits does grape seed extract offer for antioxidant and cardiovascular health, and what common side effects should I be aware of?",
+            "For individuals with allergies, what are the best alternatives to grape seed extract for supporting antioxidant and cardiovascular health?"
+        ]
+    },
+    "Collagen": {
+        "questions": [
+            "I am experiencing digestive issues and occasional allergic reactions. Could these symptoms be related to a supplement, and what can I do to alleviate them?",
+            "I have a seafood allergy and need to be cautious about supplements. What general advice do you have for choosing supplements that are safe for people with seafood allergies?",
+            "I would like to improve my skin health and support my joints. What types of supplements are typically recommended for these purposes?",
+            "What benefits do supplements aimed at skin health and joint support offer, and what common side effects should I be aware of?",
+            "For individuals with seafood allergies, what are the best alternatives to collagen supplements for supporting skin health and joint function?"
+        ]
+    },
+    "Probiotics": {
+        "questions": [
+            "I am experiencing gas, bloating, and digestive upset. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have a compromised immune system and need to be careful with supplements. What general advice can you provide for those with immune system concerns considering gut health supplements?",
+            "I want to improve my gut health and digestion. What types of supplements are recommended for these purposes?",
+            "What are the potential benefits of supplements for gut health and digestion, and what common side effects should I be aware of?",
+            "For individuals with compromised immune systems, what are the safest alternatives to probiotics for supporting gut health?"
+        ]
+    },
+    "Ginseng Extract": {
+        "questions": [
+            "I am experiencing insomnia, nervousness, and digestive upset. Could these symptoms be related to a supplement, and what can I do to manage them?",
+            "I have high blood pressure and am cautious about supplements. What general advice do you have for those with high blood pressure considering energy and mental performance supplements?",
+            "I want to boost my energy and improve my mental performance. What types of supplements are recommended for these goals?",
+            "What benefits does ginseng extract offer for energy and mental performance, and what common side effects should I be aware of?",
+            "For individuals with high blood pressure, what are the best alternatives to ginseng extract for improving energy and mental performance?"
+        ]
+    },
+    "Soy Isoflavones": {
+        "questions": [
+            "I am experiencing digestive issues and headaches. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have a hormone-sensitive condition and need to be cautious about supplements. What general advice can you provide for those with hormone-sensitive conditions considering hormone balance supplements?",
+            "I want to support hormone balance and bone health. What types of supplements are recommended for these purposes?",
+            "What benefits do supplements for hormone balance and bone health offer, and what common side effects should I be aware of?",
+            "For individuals with hormone-sensitive conditions, what are the safest alternatives to soy isoflavones for supporting hormone balance and bone health?"
+        ]
+    },
+    "L-Carnitine": {
+        "questions": [
+            "I am experiencing nausea, headaches, and gastrointestinal issues. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have thyroid issues and am cautious about supplements. What general advice can you provide for those with thyroid concerns considering fat metabolism and energy supplements?",
+            "I want to improve fat metabolism and boost my energy. What types of supplements are recommended for these goals?",
+            "What benefits does L-carnitine offer for fat metabolism and energy, and what common side effects should I be aware of?",
+            "For individuals with thyroid issues, what are the best alternatives to L-carnitine for supporting fat metabolism and energy?"
+        ]
+    },
+    "Propolis": {
+        "questions": [
+            "I am experiencing allergic reactions and gastrointestinal issues. Could these symptoms be related to a supplement, and what can I do to manage them?",
+            "I have a bee allergy and need to be cautious about supplements. What general advice do you have for those with bee allergies considering immune support supplements?",
+            "I want to improve my immune support and aid in wound healing. What types of supplements are recommended for these purposes?",
+            "What benefits does propolis offer for immune support and wound healing, and what common side effects should I be aware of?",
+            "For individuals with bee allergies, what are the safest alternatives to propolis for supporting immune function and wound healing?"
+        ]
+    },
+    "Green Tea Extract": {
+        "questions": [
+            "I am experiencing insomnia, stomach upset, and frequent headaches. Could these symptoms be related to a supplement, and what steps can I take to alleviate them?",
+            "I am sensitive to caffeine and need to be cautious about supplements. What general advice do you have for choosing supplements that are safe for people with caffeine sensitivity?",
+            "I want to boost my metabolism and improve my antioxidant levels. What types of supplements are typically recommended for these purposes?",
+            "What benefits does green tea extract offer for antioxidant support and metabolism, and what common side effects should I be aware of?",
+            "For individuals with caffeine sensitivity, what are the best alternatives to green tea extract for supporting metabolism and antioxidant levels?"
+        ]
+    },
+    "Pine Bark Extract": {
+        "questions": [
+            "I am experiencing headaches, dizziness, and gastrointestinal issues. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have certain allergies and need to be cautious with supplements. What general advice can you provide for those with allergies considering circulation support supplements?",
+            "I want to improve my circulation and boost antioxidant levels. What types of supplements are recommended for these goals?",
+            "What benefits does pine bark extract offer for antioxidant support and circulation, and what common side effects should I be aware of?",
+            "For individuals with allergies, what are the safest alternatives to pine bark extract for supporting circulation and antioxidant levels?"
+        ]
+    },
+    "Frankincense Extract": {
+        "questions": [
+            "I am experiencing skin irritation and digestive issues. Could these symptoms be related to a supplement, and what can I do to alleviate them?",
+            "I have certain allergies and need to be cautious about supplements. What general advice can you provide for those with allergies considering anti-inflammatory supplements?",
+            "I want to reduce inflammation and manage pain. What types of supplements are recommended for these purposes?",
+            "What benefits does frankincense extract offer for anti-inflammatory effects and pain relief, and what common side effects should I be aware of?",
+            "For individuals with allergies, what are the best alternatives to frankincense extract for managing inflammation and pain?"
+        ]
+    },
+    "Aloe Vera": {
+        "questions": [
+            "I am experiencing diarrhea and abdominal cramping. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have certain digestive issues and need to be cautious with supplements. What general advice can you provide for those with digestive concerns considering skin health supplements?",
+            "I want to improve my skin health and support my digestion. What types of supplements are recommended for these goals?",
+            "What benefits does aloe vera offer for skin health and digestive support, and what common side effects should I be aware of?",
+            "For individuals with digestive issues, what are the best alternatives to aloe vera for supporting skin health and digestion?"
+        ]
+    },
+    "Squalene": {
+        "questions": [
+            "I am experiencing digestive issues and skin rash. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have certain skin conditions and need to be cautious about supplements. What general advice can you provide for those with skin concerns considering skin hydration supplements?",
+            "I want to improve skin hydration and boost antioxidant levels. What types of supplements are recommended for these purposes?",
+            "What benefits does squalene offer for skin hydration and antioxidant support, and what common side effects should I be aware of?",
+            "For individuals with skin conditions, what are the safest alternatives to squalene for supporting skin hydration and antioxidant levels?"
+        ]
+    },
+    "Cod Liver Oil": {
+        "questions": [
+            "I am experiencing a fishy aftertaste, nausea, and digestive issues. Could these symptoms be related to a supplement, and what can I do to alleviate them?",
+            "I have a fish allergy and need to be cautious with supplements. What general advice can you provide for those with fish allergies considering heart and joint health supplements?",
+            "I want to support my heart health and improve joint function. What types of supplements are recommended for these goals?",
+            "What benefits does cod liver oil offer for heart health and joint support, and what common side effects should I be aware of?",
+            "For individuals with fish allergies, what are the best alternatives to cod liver oil for supporting heart health and joint function?"
+        ]
+    },
+    "Arginine": {
+        "questions": [
+            "I am experiencing gastrointestinal issues and a rash. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have herpes and kidney issues. What general advice can you provide for someone with these conditions considering muscle growth and circulation supplements?",
+            "I want to support muscle growth and improve circulation. What types of supplements are typically recommended for these purposes?",
+            "What benefits does arginine offer for muscle growth and circulation, and what common side effects should I be aware of?",
+            "For individuals with herpes or kidney issues, what are the safest alternatives to arginine for supporting muscle growth and circulation?"
+        ]
+    },
+    "Coenzyme Q10": {
+        "questions": [
+            "I am experiencing insomnia, headaches, and gastrointestinal issues. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I am on certain medications and need to be cautious about supplements. What general advice can you provide for someone with this concern considering cellular energy and heart health supplements?",
+            "I want to boost cellular energy and support heart health. What types of supplements are recommended for these goals?",
+            "What benefits does coenzyme Q10 offer for cellular energy and heart health, and what common side effects should I be aware of?",
+            "For individuals on certain medications, what are the best alternatives to coenzyme Q10 for supporting cellular energy and heart health?"
+        ]
+    },
+    "Glucosamine": {
+        "questions": [
+            "I am experiencing gastrointestinal upset and headaches. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have a shellfish allergy and need to be cautious with supplements. What general advice can you provide for someone with this allergy considering joint health supplements?",
+            "I want to improve my joint health. What types of supplements are typically recommended for this purpose?",
+            "What benefits does glucosamine offer for joint health, and what common side effects should I be aware of?",
+            "For individuals with shellfish allergies, what are the safest alternatives to glucosamine for supporting joint health?"
+        ]
+    },
+    "Rhodiola Rosea": {
+        "questions": [
+            "I am experiencing insomnia, irritability, and dry mouth. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have bipolar disorder and need to be cautious with supplements. What general advice can you provide for someone with this condition considering stress relief and mental performance supplements?",
+            "I want to reduce stress and enhance mental performance. What types of supplements are recommended for these goals?",
+            "What benefits does Rhodiola Rosea offer for stress relief and mental performance, and what common side effects should I be aware of?",
+            "For individuals with bipolar disorder, what are the best alternatives to Rhodiola Rosea for managing stress and improving mental performance?"
+        ]
+    },
+    "Ashwagandha": {
+        "questions": [
+            "I am experiencing drowsiness and digestive issues. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have a thyroid disorder and need to be cautious with supplements. What general advice can you provide for someone with this condition considering stress relief and energy supplements?",
+            "I want to reduce stress and boost my energy levels. What types of supplements are typically recommended for these purposes?",
+            "What benefits does Ashwagandha offer for stress relief and energy, and what common side effects should I be aware of?",
+            "For individuals with thyroid disorders, what are the safest alternatives to Ashwagandha for managing stress and increasing energy?"
+        ]
+    },
+    "Turmeric Extract": {
+        "questions": [
+            "I am experiencing stomach upset, nausea, and diarrhea. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have gallbladder issues and need to be cautious with supplements. What general advice can you provide for someone with this condition considering anti-inflammatory and antioxidant supplements?",
+            "I want to reduce inflammation and improve antioxidant levels. What types of supplements are recommended for these goals?",
+            "What benefits does turmeric extract offer for anti-inflammatory effects and antioxidant support, and what common side effects should I be aware of?",
+            "For individuals with gallbladder issues, what are the best alternatives to turmeric extract for supporting inflammation and antioxidant levels?"
+        ]
+    },
+    "Milk Thistle": {
+        "questions": [
+            "I am experiencing nausea, diarrhea, and allergic reactions. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have allergies to milk thistle and need to be cautious with supplements. What general advice can you provide for someone with this allergy considering liver health supplements?",
+            "I want to support my liver health and aid detoxification. What types of supplements are typically recommended for these purposes?",
+            "What benefits does milk thistle offer for liver health and detoxification, and what common side effects should I be aware of?",
+            "For individuals with allergies to milk thistle, what are the safest alternatives for supporting liver health and detoxification?"
+        ]
+    },
+    "Celery Seed Extract": {
+        "questions": [
+            "I am experiencing nausea, digestive upset, and skin rash. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have certain allergies and need to be cautious with supplements. What general advice can you provide for someone with these allergies considering joint health and anti-inflammatory supplements?",
+            "I want to improve joint health and manage inflammation. What types of supplements are recommended for these goals?",
+            "What benefits does celery seed extract offer for joint health and anti-inflammatory effects, and what common side effects should I be aware of?",
+            "For individuals with certain allergies, what are the best alternatives to celery seed extract for supporting joint health and reducing inflammation?"
+        ]
+    },
+    "Beta-Alanine": {
+        "questions": [
+            "I am experiencing tingling and flushing sensations. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have certain health conditions and need to be cautious with supplements. What general advice can you provide for someone with these conditions considering exercise performance and endurance supplements?",
+            "I want to improve my exercise performance and endurance. What types of supplements are typically recommended for these purposes?",
+            "What benefits does beta-alanine offer for exercise performance and endurance, and what common side effects should I be aware of?",
+            "For individuals with certain health conditions, what are the safest alternatives to beta-alanine for enhancing exercise performance and endurance?"
+        ]
+    },
+    "Caffeine": {
+        "questions": [
+            "I am experiencing insomnia, jitteriness, and digestive issues. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have an anxiety disorder and need to be cautious with supplements. What general advice can you provide for someone with this condition considering energy and alertness supplements?",
+            "I want to boost my energy and alertness. What types of supplements are recommended for these goals?",
+            "What benefits does caffeine offer for energy and alertness, and what common side effects should I be aware of?",
+            "For individuals with anxiety disorders, what are the best alternatives to caffeine for enhancing energy and alertness?"
+        ]
+    },
+    "Chlorophyll": {
+        "questions": [
+            "I am experiencing green stool and stomach upset. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have certain allergies and need to be cautious with supplements. What general advice can you provide for someone with these allergies considering detoxification and digestive health supplements?",
+            "I want to support detoxification and improve digestive health. What types of supplements are typically recommended for these purposes?",
+            "What benefits does chlorophyll offer for detoxification and digestive health, and what common side effects should I be aware of?",
+            "For individuals with specific allergies, what are the safest alternatives to chlorophyll for supporting detoxification and digestive health?"
+        ]
+    },
+    "L-Glutamine": {
+        "questions": [
+            "I am experiencing gastrointestinal issues and headaches. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have liver or kidney issues and need to be cautious with supplements. What general advice can you provide for someone with these conditions considering muscle recovery and gut health supplements?",
+            "I want to enhance muscle recovery and improve gut health. What types of supplements are recommended for these goals?",
+            "What benefits does L-glutamine offer for muscle recovery and gut health, and what common side effects should I be aware of?",
+            "For individuals with liver or kidney issues, what are the safest alternatives to L-glutamine for supporting muscle recovery and gut health?"
+        ]
+    },
+    "Melatonin": {
+        "questions": [
+            "I am experiencing drowsiness, headache, and dizziness. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I am on certain medications and need to be cautious with supplements. What general advice can you provide for someone with this concern considering sleep aid and circadian rhythm regulation supplements?",
+            "I want to improve my sleep and regulate my circadian rhythm. What types of supplements are typically recommended for these purposes?",
+            "What benefits does melatonin offer for sleep aid and circadian rhythm regulation, and what common side effects should I be aware of?",
+            "For individuals on certain medications, what are the best alternatives to melatonin for improving sleep and regulating circadian rhythms?"
+        ]
+    },
+    "HMB": {
+        "questions": [
+            "I am experiencing gastrointestinal issues and headaches. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have liver issues and need to be cautious with supplements. What general advice can you provide for someone with this condition considering muscle preservation and recovery supplements?",
+            "I want to support muscle preservation and improve recovery. What types of supplements are typically recommended for these purposes?",
+            "What benefits does HMB offer for muscle preservation and recovery, and what common side effects should I be aware of?",
+            "For individuals with liver issues, what are the safest alternatives to HMB for supporting muscle preservation and recovery?"
+        ]
+    },
+    "Alpha-Lipoic Acid": {
+        "questions": [
+            "I am experiencing nausea, headaches, and skin rash. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have thyroid issues and need to be cautious with supplements. What general advice can you provide for someone with this condition considering antioxidant and metabolic support supplements?",
+            "I want to enhance antioxidant support and metabolic function. What types of supplements are typically recommended for these purposes?",
+            "What benefits does alpha-lipoic acid offer for antioxidant support and metabolic health, and what common side effects should I be aware of?",
+            "For individuals with thyroid issues, what are the best alternatives to alpha-lipoic acid for supporting antioxidant and metabolic health?"
+        ]
+    },
+    "Spirulina": {
+        "questions": [
+            "I am experiencing digestive issues and allergic reactions. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have allergies to algae and need to be cautious with supplements. What general advice can you provide for someone with this allergy considering nutritional and detoxification supplements?",
+            "I want to improve my nutrition and support detoxification. What types of supplements are typically recommended for these purposes?",
+            "What benefits does spirulina offer for nutritional supplementation and detoxification, and what common side effects should I be aware of?",
+            "For individuals with allergies to algae, what are the safest alternatives to spirulina for enhancing nutrition and detoxification?"
+        ]
+    },
+    "Acai Berry Extract": {
+        "questions": [
+            "I am experiencing digestive issues and headaches. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have allergies to berries and need to be cautious with supplements. What general advice can you provide for someone with this allergy considering antioxidant and energy-boosting supplements?",
+            "I want to boost my energy levels and increase antioxidant intake. What types of supplements are generally recommended for these goals?",
+            "What benefits does acai berry extract offer for antioxidant support and energy boost, and what common side effects should I be aware of?",
+            "For individuals with berry allergies, what are the safest alternatives to acai berry extract for improving energy and antioxidant levels?"
+        ]
+    },
+    "Moringa": {
+        "questions": [
+            "I am experiencing digestive issues and nausea. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have allergies to Moringa and need to be cautious with supplements. What general advice can you provide for someone with this allergy considering nutritional and anti-inflammatory support supplements?",
+            "I want to improve my nutritional intake and reduce inflammation. What types of supplements are generally recommended for these goals?",
+            "What benefits does Moringa offer for nutritional support and anti-inflammatory purposes, and what common side effects should I be aware of?",
+            "For individuals with Moringa allergies, what are the best alternatives for enhancing nutritional support and managing inflammation?"
+        ]
+    },
+    "Bovine Colostrum": {
+        "questions": [
+            "I am experiencing digestive issues and allergic reactions. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have a dairy allergy and need to be cautious with supplements. What general advice can you provide for someone with this allergy considering immune support and gut health supplements?",
+            "I want to support my immune system and improve gut health. What types of supplements are typically recommended for these purposes?",
+            "What benefits does bovine colostrum offer for immune support and gut health, and what common side effects should I be aware of?",
+            "For individuals with dairy allergies, what are the safest alternatives to bovine colostrum for boosting immunity and supporting gut health?"
+        ]
+    },
+    "Quercetin": {
+        "questions": [
+            "I am experiencing headaches and digestive issues. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have allergies to quercetin and need to be cautious with supplements. What general advice can you provide for someone with this allergy considering antioxidant and anti-inflammatory supplements?",
+            "I want to enhance my antioxidant levels and manage inflammation. What types of supplements are generally recommended for these goals?",
+            "What benefits does quercetin offer for antioxidant support and anti-inflammatory purposes, and what common side effects should I be aware of?",
+            "For individuals with quercetin allergies, what are the best alternatives for antioxidant and anti-inflammatory support?"
+        ]
+    },
+    "Resveratrol": {
+        "questions": [
+            "I am experiencing nausea, headaches, and stomach upset. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I am on certain medications and need to be cautious with supplements. What general advice can you provide for someone with this concern considering cardiovascular and antioxidant supplements?",
+            "I want to improve my cardiovascular health and increase antioxidant intake. What types of supplements are recommended for these goals?",
+            "What benefits does resveratrol offer for cardiovascular health and antioxidant support, and what common side effects should I be aware of?",
+            "For individuals taking certain medications, what are the safest alternatives to resveratrol for enhancing cardiovascular health and antioxidant levels?"
+        ]
+    },
+    "Kelp Extract": {
+        "questions": [
+            "I am experiencing nausea, diarrhea, and iodine sensitivity. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have thyroid disorders and need to be cautious with supplements. What general advice can you provide for someone with this condition considering thyroid support and iodine supplements?",
+            "I want to support my thyroid health and manage iodine levels. What types of supplements are typically recommended for these purposes?",
+            "What benefits does kelp extract offer for thyroid support and iodine, and what common side effects should I be aware of?",
+            "For individuals with thyroid disorders, what are the best alternatives to kelp extract for supporting thyroid health and managing iodine levels?"
+        ]
+    },
+    "L-Theanine": {
+        "questions": [
+            "I am experiencing drowsiness and headaches. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I am on certain medications and need to be cautious with supplements. What general advice can you provide for someone with this concern considering stress relief and cognitive function supplements?",
+            "I want to relieve stress and improve cognitive function. What types of supplements are generally recommended for these goals?",
+            "What benefits does L-theanine offer for stress relief and cognitive function, and what common side effects should I be aware of?",
+            "For individuals taking certain medications, what are the safest alternatives to L-theanine for managing stress and enhancing cognitive function?"
+        ]
+    },
+    "Glycine": {
+        "questions": [
+            "I am experiencing digestive issues and nausea. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have certain conditions and need to be cautious with supplements. What general advice can you provide for someone with these conditions considering sleep support and collagen synthesis supplements?",
+            "I want to improve my sleep quality and support collagen synthesis. What types of supplements are recommended for these goals?",
+            "What benefits does glycine offer for sleep support and collagen synthesis, and what common side effects should I be aware of?",
+            "For individuals with specific health conditions, what are the best alternatives to glycine for enhancing sleep and supporting collagen production?"
+        ]
+    },
+    "Hyaluronic Acid": {
+        "questions": [
+            "I am experiencing skin irritation and digestive issues. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have allergies to hyaluronic acid and need to be cautious with supplements. What general advice can you provide for someone with this allergy considering skin hydration and joint support supplements?",
+            "I want to improve skin hydration and support joint health. What types of supplements are typically recommended for these purposes?",
+            "What benefits does hyaluronic acid offer for skin hydration and joint support, and what common side effects should I be aware of?",
+            "For individuals with allergies to hyaluronic acid, what are the safest alternatives for enhancing skin hydration and joint health?"
+        ]
+    },
+    "Lycopene": {
+        "questions": [
+            "I am experiencing digestive issues and nausea. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have certain allergies and need to be cautious with supplements. What general advice can you provide for someone with these allergies considering antioxidant and prostate health supplements?",
+            "I want to support my antioxidant levels and improve prostate health. What types of supplements are recommended for these goals?",
+            "What benefits does lycopene offer for antioxidant support and prostate health, and what common side effects should I be aware of?",
+            "For individuals with specific allergies, what are the best alternatives to lycopene for enhancing antioxidant levels and supporting prostate health?"
+        ]
+    },
+    "Glycyrrhizin": {
+        "questions": [
+            "I am experiencing headaches, high blood pressure, and water retention. Could these symptoms be related to a supplement, and how can they be managed?",
+            "I have high blood pressure and need to be cautious with supplements. What general advice can you provide for someone with this condition considering digestive health and inflammation supplements?",
+            "I want to improve digestive health and manage inflammation. What types of supplements are typically recommended for these goals?",
+            "What benefits does glycyrrhizin offer for digestive health and inflammation, and what common side effects should I be aware of?",
+            "For individuals with high blood pressure, what are the safest alternatives to glycyrrhizin for supporting digestive health and managing inflammation?"
+        ]
+    }
+}

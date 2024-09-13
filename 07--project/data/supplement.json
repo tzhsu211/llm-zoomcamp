@@ -1,0 +1,479 @@
+[
+     {
+        "name": "Vitamin C",
+        "purpose": "Immune support and antioxidant",
+        "who_should_not_use": "People with kidney stones",
+        "common_side_effects": "Gastrointestinal upset, headache",
+        "recommended_dosage": "500-1000 mg daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Vitamin D",
+        "purpose": "Bone health and immune support",
+        "who_should_not_use": "People with high calcium levels",
+        "common_side_effects": "Nausea, headache, dry mouth",
+        "recommended_dosage": "600-800 IU daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Vitamin E",
+        "purpose": "Antioxidant and skin health",
+        "who_should_not_use": "People with bleeding disorders",
+        "common_side_effects": "Nausea, headache, fatigue",
+        "recommended_dosage": "15 mg daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Vitamin B12",
+        "purpose": "Red blood cell formation and nerve health",
+        "who_should_not_use": "People with certain types of anemia",
+        "common_side_effects": "Mild diarrhea, headache",
+        "recommended_dosage": "1000 mcg daily",
+        "source": "Synthetic",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Vitamin B6",
+        "purpose": "Metabolism and brain health",
+        "who_should_not_use": "People with kidney disease",
+        "common_side_effects": "Nausea, headache, irritability",
+        "recommended_dosage": "1.3-2 mg daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Calcium",
+        "purpose": "Bone health",
+        "who_should_not_use": "People with high calcium levels",
+        "common_side_effects": "Constipation, bloating",
+        "recommended_dosage": "1000-1200 mg daily",
+        "source": "Mineral",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Iron",
+        "purpose": "Blood production and energy",
+        "who_should_not_use": "People with hemochromatosis",
+        "common_side_effects": "Constipation, nausea, stomach pain",
+        "recommended_dosage": "18 mg daily",
+        "source": "Mineral",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Magnesium",
+        "purpose": "Muscle and nerve function",
+        "who_should_not_use": "People with kidney disease",
+        "common_side_effects": "Diarrhea, nausea, abdominal discomfort",
+        "recommended_dosage": "310-420 mg daily",
+        "source": "Mineral",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Zinc",
+        "purpose": "Immune function and wound healing",
+        "who_should_not_use": "People with certain health conditions",
+        "common_side_effects": "Nausea, metallic taste, headache",
+        "recommended_dosage": "11 mg daily",
+        "source": "Mineral",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Fish Oil",
+        "purpose": "Heart health and inflammation",
+        "who_should_not_use": "People with fish allergies",
+        "common_side_effects": "Fishy aftertaste, stomach upset",
+        "recommended_dosage": "1000-2000 mg daily",
+        "source": "Marine",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Whey Protein",
+        "purpose": "Muscle growth and repair",
+        "who_should_not_use": "People with lactose intolerance",
+        "common_side_effects": "Gas, bloating, stomach cramps",
+        "recommended_dosage": "20-30 g post-workout",
+        "source": "Dairy",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Amino Acids",
+        "purpose": "Muscle repair and growth",
+        "who_should_not_use": "People with liver disease",
+        "common_side_effects": "Gastrointestinal discomfort, headache",
+        "recommended_dosage": "5-10 g daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Herbal Extracts",
+        "purpose": "General health benefits",
+        "who_should_not_use": "People with allergies to herbs",
+        "common_side_effects": "Varies by extract",
+        "recommended_dosage": "Varies",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Grape Seed Extract",
+        "purpose": "Antioxidant and cardiovascular health",
+        "who_should_not_use": "People with certain allergies",
+        "common_side_effects": "Headache, dizziness, gastrointestinal issues",
+        "recommended_dosage": "100-300 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Collagen",
+        "purpose": "Skin health and joint support",
+        "who_should_not_use": "People with seafood allergies",
+        "common_side_effects": "Digestive issues, allergic reactions",
+        "recommended_dosage": "2.5-15 g daily",
+        "source": "Animal",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Probiotics",
+        "purpose": "Gut health and digestion",
+        "who_should_not_use": "People with compromised immune systems",
+        "common_side_effects": "Gas, bloating, digestive upset",
+        "recommended_dosage": "1-10 billion CFU daily",
+        "source": "Bacterial",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Ginseng Extract",
+        "purpose": "Energy and mental performance",
+        "who_should_not_use": "People with high blood pressure",
+        "common_side_effects": "Insomnia, nervousness, digestive upset",
+        "recommended_dosage": "200-400 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Soy Isoflavones",
+        "purpose": "Hormone balance and bone health",
+        "who_should_not_use": "People with hormone-sensitive conditions",
+        "common_side_effects": "Digestive issues, headaches",
+        "recommended_dosage": "50-100 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "L-Carnitine",
+        "purpose": "Fat metabolism and energy",
+        "who_should_not_use": "People with thyroid issues",
+        "common_side_effects": "Nausea, headache, gastrointestinal issues",
+        "recommended_dosage": "500-2000 mg daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Propolis",
+        "purpose": "Immune support and wound healing",
+        "who_should_not_use": "People with bee allergies",
+        "common_side_effects": "Allergic reactions, gastrointestinal issues",
+        "recommended_dosage": "500-1000 mg daily",
+        "source": "Bee",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Green Tea Extract",
+        "purpose": "Antioxidant and metabolism boost",
+        "who_should_not_use": "People with caffeine sensitivity",
+        "common_side_effects": "Insomnia, stomach upset, headaches",
+        "recommended_dosage": "250-500 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Pine Bark Extract",
+        "purpose": "Antioxidant and circulation support",
+        "who_should_not_use": "People with certain allergies",
+        "common_side_effects": "Headache, dizziness, gastrointestinal issues",
+        "recommended_dosage": "50-200 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Frankincense Extract",
+        "purpose": "Anti-inflammatory and pain relief",
+        "who_should_not_use": "People with certain allergies",
+        "common_side_effects": "Skin irritation, digestive issues",
+        "recommended_dosage": "500-1000 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Aloe Vera",
+        "purpose": "Skin health and digestive support",
+        "who_should_not_use": "People with certain digestive issues",
+        "common_side_effects": "Diarrhea, abdominal cramping",
+        "recommended_dosage": "200-500 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Squalene",
+        "purpose": "Skin hydration and antioxidant",
+        "who_should_not_use": "People with certain skin conditions",
+        "common_side_effects": "Digestive issues, skin rash",
+        "recommended_dosage": "100-200 mg daily",
+        "source": "Marine",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Cod Liver Oil",
+        "purpose": "Heart and joint health",
+        "who_should_not_use": "People with fish allergies",
+        "common_side_effects": "Fishy aftertaste, nausea, digestive issues",
+        "recommended_dosage": "1000-2000 mg daily",
+        "source": "Marine",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Arginine",
+        "purpose": "Muscle growth and circulation",
+        "who_should_not_use": "People with herpes or kidney issues",
+        "common_side_effects": "Gastrointestinal issues, rash",
+        "recommended_dosage": "2-6 g daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Coenzyme Q10",
+        "purpose": "Cellular energy and heart health",
+        "who_should_not_use": "People with certain medications",
+        "common_side_effects": "Insomnia, headache, gastrointestinal issues",
+        "recommended_dosage": "100-300 mg daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Glucosamine",
+        "purpose": "Joint health",
+        "who_should_not_use": "People with shellfish allergies",
+        "common_side_effects": "Gastrointestinal upset, headache",
+        "recommended_dosage": "1500 mg daily",
+        "source": "Animal",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Rhodiola Rosea",
+        "purpose": "Stress relief and mental performance",
+        "who_should_not_use": "People with bipolar disorder",
+        "common_side_effects": "Insomnia, irritability, dry mouth",
+        "recommended_dosage": "200-400 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Ashwagandha",
+        "purpose": "Stress relief and energy",
+        "who_should_not_use": "People with thyroid disorders",
+        "common_side_effects": "Drowsiness, digestive issues",
+        "recommended_dosage": "300-600 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Turmeric Extract",
+        "purpose": "Anti-inflammatory and antioxidant",
+        "who_should_not_use": "People with gallbladder issues",
+        "common_side_effects": "Stomach upset, nausea, diarrhea",
+        "recommended_dosage": "500-1000 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Milk Thistle",
+        "purpose": "Liver health and detoxification",
+        "who_should_not_use": "People with allergies to milk thistle",
+        "common_side_effects": "Nausea, diarrhea, allergic reactions",
+        "recommended_dosage": "140-420 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Celery Seed Extract",
+        "purpose": "Joint health and anti-inflammatory",
+        "who_should_not_use": "People with certain allergies",
+        "common_side_effects": "Nausea, digestive upset, skin rash",
+        "recommended_dosage": "200-500 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Beta-Alanine",
+        "purpose": "Exercise performance and endurance",
+        "who_should_not_use": "People with certain health conditions",
+        "common_side_effects": "Tingling, flushing, gastrointestinal issues",
+        "recommended_dosage": "2-5 g daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Caffeine",
+        "purpose": "Energy and alertness",
+        "who_should_not_use": "People with anxiety disorders",
+        "common_side_effects": "Insomnia, jitteriness, digestive issues",
+        "recommended_dosage": "100-200 mg daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Chlorophyll",
+        "purpose": "Detoxification and digestive health",
+        "who_should_not_use": "People with certain allergies",
+        "common_side_effects": "Green stool, stomach upset",
+        "recommended_dosage": "100-300 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "L-Glutamine",
+        "purpose": "Muscle recovery and gut health",
+        "who_should_not_use": "People with liver or kidney issues",
+        "common_side_effects": "Gastrointestinal issues, headaches",
+        "recommended_dosage": "5-10 g daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Melatonin",
+        "purpose": "Sleep aid and circadian rhythm regulation",
+        "who_should_not_use": "People with certain medications",
+        "common_side_effects": "Drowsiness, headache, dizziness",
+        "recommended_dosage": "1-5 mg nightly",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "HMB",
+        "purpose": "Muscle preservation and recovery",
+        "who_should_not_use": "People with liver issues",
+        "common_side_effects": "Gastrointestinal issues, headache",
+        "recommended_dosage": "3 g daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Alpha-Lipoic Acid",
+        "purpose": "Antioxidant and metabolic support",
+        "who_should_not_use": "People with thyroid issues",
+        "common_side_effects": "Nausea, headache, skin rash",
+        "recommended_dosage": "300-600 mg daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Spirulina",
+        "purpose": "Nutritional supplement and detoxification",
+        "who_should_not_use": "People with allergies to algae",
+        "common_side_effects": "Digestive issues, allergic reactions",
+        "recommended_dosage": "1-3 g daily",
+        "source": "Algae",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Acai Berry Extract",
+        "purpose": "Antioxidant and energy boost",
+        "who_should_not_use": "People with allergies to berries",
+        "common_side_effects": "Digestive issues, headache",
+        "recommended_dosage": "500-1000 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Moringa",
+        "purpose": "Nutritional support and anti-inflammatory",
+        "who_should_not_use": "People with allergies to Moringa",
+        "common_side_effects": "Digestive issues, nausea",
+        "recommended_dosage": "500-1000 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Bovine Colostrum",
+        "purpose": "Immune support and gut health",
+        "who_should_not_use": "People with dairy allergies",
+        "common_side_effects": "Digestive issues, allergic reactions",
+        "recommended_dosage": "500-1000 mg daily",
+        "source": "Animal",
+        "vegan_friendly": false
+    },
+    {
+        "name": "Quercetin",
+        "purpose": "Antioxidant and anti-inflammatory",
+        "who_should_not_use": "People with allergies to quercetin",
+        "common_side_effects": "Headache, digestive issues",
+        "recommended_dosage": "500-1000 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Resveratrol",
+        "purpose": "Antioxidant and cardiovascular health",
+        "who_should_not_use": "People with certain medications",
+        "common_side_effects": "Nausea, headache, stomach upset",
+        "recommended_dosage": "100-500 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Kelp Extract",
+        "purpose": "Thyroid support and iodine",
+        "who_should_not_use": "People with thyroid disorders",
+        "common_side_effects": "Nausea, diarrhea, iodine sensitivity",
+        "recommended_dosage": "100-300 mg daily",
+        "source": "Marine",
+        "vegan_friendly": true
+    },
+    {
+        "name": "L-Theanine",
+        "purpose": "Stress relief and cognitive function",
+        "who_should_not_use": "People with certain medications",
+        "common_side_effects": "Drowsiness, headache",
+        "recommended_dosage": "100-200 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Glycine",
+        "purpose": "Sleep support and collagen synthesis",
+        "who_should_not_use": "People with certain conditions",
+        "common_side_effects": "Digestive issues, nausea",
+        "recommended_dosage": "3-5 g daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Hyaluronic Acid",
+        "purpose": "Skin hydration and joint support",
+        "who_should_not_use": "People with allergies to hyaluronic acid",
+        "common_side_effects": "Skin irritation, digestive issues",
+        "recommended_dosage": "50-200 mg daily",
+        "source": "Synthetic",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Lycopene",
+        "purpose": "Antioxidant and prostate health",
+        "who_should_not_use": "People with certain allergies",
+        "common_side_effects": "Digestive issues, nausea",
+        "recommended_dosage": "6-15 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    },
+    {
+        "name": "Glycyrrhizin",
+        "purpose": "Digestive health and inflammation",
+        "who_should_not_use": "People with high blood pressure",
+        "common_side_effects": "Headache, high blood pressure, water retention",
+        "recommended_dosage": "50-150 mg daily",
+        "source": "Plant",
+        "vegan_friendly": true
+    }
+]
