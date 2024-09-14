@@ -137,3 +137,20 @@ def get_feedback_stats():
             return cur.fetchone()
     finally:
         conn.close()
+
+def get_answer_data(conversation_id):
+    conn = get_db_connection()
+    try:
+        with conn.cursor(cursor_factory=DictCursor) as cur:
+            cur.execute("""
+                SELECT *
+                FROM conversations
+                WHERE id = %s
+            """, (conversation_id,))
+            result = cur.fetchone()
+            if result:
+                return dict(result)
+            else:
+                return None
+    finally:
+        conn.close()

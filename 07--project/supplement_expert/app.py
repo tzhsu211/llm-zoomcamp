@@ -1,76 +1,70 @@
-from flask import Flask, request, render_template, redirect, url_for
-from elasticsearch import Elasticsearch
-from sentence_transformers import SentenceTransformer
-import os
-import json
-from dotenv import load_dotenv
-from db import save_conversation, save_feedback, get_answer_data
-
-load_dotenv('../.env')
-
-app = Flask(__name__)
-
-# initalize elasticsearch and embedding model
-ELASTIC_URL = os.getenv("ELASTIC_URL_LOCAL")
-MODEL_NAME = os.getenv("MODEL_NAME")
-INDEX_NAME = os.getenv("INDEX_NAME")
-
-es_client = Elasticsearch(ELASTIC_URL)
-model = SentenceTransformer(MODEL_NAME)
-
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    if request.method == 'POST':
-        question = request.form.get('question')
-        is_vegan = request.form.get('vegan') == 'on'
-
-        # ask question nand vegan (default is false)
-        answer_data = ask_question(question, is_vegan)
-
-        # save conversation
-        save_conversation(
-            conversation_id=answer_data['conversation_id'],
-            question=question,
-            answer_data=answer_data
-        )
-
-        # 重定向回首頁，並附帶 conversation_id 查詢參數
-        return redirect(url_for('index', conversation_id=answer_data['conversation_id']))
-
-    conversation_id = request.args.get('conversation_id')
-    question = ""
-    answer = ""
-    if conversation_id:
-        # 根據 conversation_id 從資料庫取得相關資訊
-        answer_data = get_answer_data(conversation_id)
-        question = answer_data['question']
-        answer = answer_data['answer']
-
-    return render_template('index.html', question=question, answer=answer, conversation_id=conversation_id)
-
-@app.route('/feedback/<conversation_id>', methods=['POST'])
-def feedback(conversation_id):
-    feedback_value = int(request.form.get('feedback'))
-    save_feedback(conversation_id, feedback_value)
-    return redirect(url_for('index'))
+import streamlit as st
+import requests
+from db import save_conversation, save_feedback, get_answer_data, get_recent_conversations, get_feedback_stats
+from datetime import datetime
 
 def ask_question(question, is_vegan):
-    # 這裡是模擬對問題進行處理的部分
-    # 實際應用中，這部分應該連接到 Elasticsearch 和 LLM
-    answer_data = {
-        "conversation_id": "some_unique_id",  # 這裡需要生成唯一的 ID
-        "answer": "This is a mock answer",
-        "response_time": 0.5,
-        "relevance": "high",
-        "relevance_explanation": "Highly relevant",
-        "prompt_tokens": 10,
-        "completion_tokens": 15,
-        "total_tokens": 25,
-        "eval_prompt_tokens": 5,
-        "eval_completion_tokens": 7,
-        "eval_total_tokens": 12
-    }
-    return answer_data
+    # 在這裡加入向後端或服務器發送問題的邏輯
+    # 這是一個示例假設的接口
+    response = requests.post('http://localhost:5000/ask', json={
+        'question': question,
+        'vegan': is_vegan
+    })
+    return response.json()
 
-if __name__ == '__main__':
-    app.run(debug=True)
+def main():
+    st.title("Supplement Expert")
+    
+    # 用戶輸入問題
+    with st.form(key='question_form'):
+        question = st.text_input("Question:")
+        is_vegan = st.checkbox("Are you vegan?")
+        submit_button = st.form_submit_button("Ask")
+
+        if submit_button:
+            if question:
+                answer_data = ask_question(question, is_vegan)
+                st.session_state.conversation_id = answer_data['conversation_id']
+                st.session_state.question = question
+                st.session_state.answer = answer_data['answer']
+                st.session_state.feedback_given = False
+            else:
+                st.error("Please enter a question.")
+
+    if 'conversation_id' in st.session_state:
+        st.subheader("Answer")
+        st.write(st.session_state.answer)
+
+        if not st.session_state.feedback_given:
+            feedback = st.radio("Was the answer helpful?", (-1, 1), format_func=lambda x: "No" if x == -1 else "Yes")
+            submit_feedback = st.button("Submit Feedback")
+
+            if submit_feedback:
+                if st.session_state.conversation_id:
+                    save_feedback(st.session_state.conversation_id, feedback)
+                    st.session_state.feedback_given = True
+                    st.success("Feedback submitted!")
+                else:
+                    st.error("Error: No conversation ID found.")
+
+    st.subheader("Recent Conversations")
+    recent_conversations = get_recent_conversations(limit=5)
+    if recent_conversations:
+        for convo in recent_conversations:
+            st.write(f"**Question:** {convo['question']}")
+            st.write(f"**Answer:** {convo['answer']}")
+            st.write(f"**Feedback:** {convo['feedback']}")
+            st.write("---")
+    else:
+        st.write("No recent conversations found.")
+
+    st.subheader("Feedback Statistics")
+    feedback_stats = get_feedback_stats()
+    if feedback_stats:
+        st.write(f"Thumbs Up: {feedback_stats['thumbs_up']}")
+        st.write(f"Thumbs Down: {feedback_stats['thumbs_down']}")
+    else:
+        st.write("No feedback data available.")
+
+if __name__ == "__main__":
+    main()
