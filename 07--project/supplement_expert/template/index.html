@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplement Expert</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <div id="question-form">
+        <h1>Supplement Expert</h1>
+        <form id="question-form-element" method="post" action="{{ url_for('index') }}">
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="4" cols="50" required></textarea>
+            <br>
+            <label for="vegan">Are you vegan?</label>
+            <input type="checkbox" id="vegan" name="vegan">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="feedback-form" style="display: none;">
+        <h1>Feedback</h1>
+        <p>Your question: {{ question }}</p>
+        <p>Answer: {{ answer }}</p>
+
+        <form id="feedback-form-element" method="post" action="{{ url_for('feedback', conversation_id=conversation_id) }}">
+            <label for="feedback">Rate the response:</label>
+            <select id="feedback" name="feedback" required>
+                <option value="1">Thumbs Up</option>
+                <option value="-1">Thumbs Down</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit Feedback">
+        </form>
+
+        <button id="ask-another" type="button">Ask another question</button>
+    </div>
+
+    <script>
+        // Check if feedback form is to be shown
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('conversation_id')) {
+            showFeedback();
+        }
+    </script>
+</body>
+</html>

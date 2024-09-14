@@ -141,5 +141,23 @@ def main():
     print("Indexing process completed successfully!")
 
 
+def initialize_data():
+    # you may consider to comment <start>
+    # if you just want to init the db or didn't want to re-index
+    print("Starting the indexing process...")
+
+    documents = fetch_documents()
+    ground_truth = fetch_ground_truth()
+    model = load_model()
+    es_client = setup_elasticsearch()
+    index_documents(es_client, documents, model)
+    # you may consider to comment <end>
+
+    print("Initializing database...")
+    init_db()
+
+    print("Indexing process completed successfully!")
+
+
 if __name__ == "__main__":
     main()
