@@ -2,6 +2,13 @@ import streamlit as st
 import requests
 from db import save_conversation, save_feedback, get_answer_data, get_recent_conversations, get_feedback_stats
 from datetime import datetime
+from ingestion import initialize_data
+from dotenv import load_dotenv
+
+load_dotenv('../.env')
+
+def print_log(message):
+    print(message, flush=True)
 
 def ask_question(question, is_vegan):
     # 在這裡加入向後端或服務器發送問題的邏輯
@@ -13,6 +20,9 @@ def ask_question(question, is_vegan):
     return response.json()
 
 def main():
+    
+    initialize_data()
+
     st.title("Supplement Expert")
     
     # 用戶輸入問題
