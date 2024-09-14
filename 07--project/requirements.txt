@@ -11,4 +11,3 @@ jupyter
 sentence-transformers
 python-dotenv
 psycopg2
-Flask
