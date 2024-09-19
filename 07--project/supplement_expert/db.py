@@ -19,9 +19,13 @@ def get_db_connection():
 def init_db():
     conn = get_db_connection()
     try:
-        with conn.cursor() as cur: 
-            cur.execute("DROP TABLE IF EXISTS conversations")
+        with conn.cursor() as cur:
+            # 先删除 feedback 表
+            cur.execute("DROP TABLE IF EXISTS feedback;")
+            # 然后删除 conversations 表
+            cur.execute("DROP TABLE IF EXISTS conversations;")
 
+            # 创建 conversations 表
             cur.execute("""
                 CREATE TABLE conversations (
                     id TEXT PRIMARY KEY,
@@ -39,6 +43,8 @@ def init_db():
                     timestamp TIMESTAMP WITH TIME ZONE NOT NULL
                 )
             """)
+
+            # 创建 feedback 表
             cur.execute("""
                 CREATE TABLE feedback (
                     id SERIAL PRIMARY KEY,
@@ -47,9 +53,11 @@ def init_db():
                     timestamp TIMESTAMP WITH TIME ZONE NOT NULL
                 )
             """)
+
         conn.commit()
     finally:
         conn.close()
+
 
 
 def save_conversation(conversation_id, question, answer_data, timestamp=None):

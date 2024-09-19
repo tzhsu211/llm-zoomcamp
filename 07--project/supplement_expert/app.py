@@ -28,7 +28,7 @@ def main():
     # 用戶輸入問題
     with st.form(key='question_form'):
         question = st.text_input("Question:")
-        is_vegan = st.checkbox("Are you vegan?")
+        is_vegan = st.checkbox("I am a vegan!")
         submit_button = st.form_submit_button("Ask")
 
         if submit_button:
