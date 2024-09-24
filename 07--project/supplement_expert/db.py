@@ -39,14 +39,9 @@ def init_db():
                     question TEXT NOT NULL,
                     answer TEXT NOT NULL,
                     response_time FLOAT NOT NULL,
-                    relevance TEXT NOT NULL,
-                    relevance_explanation TEXT NOT NULL,
-                    prompt_tokens INTEGER NOT NULL,
-                    completion_tokens INTEGER NOT NULL,
-                    total_tokens INTEGER NOT NULL,
-                    eval_prompt_tokens INTEGER NOT NULL,
-                    eval_completion_tokens INTEGER NOT NULL,
-                    eval_total_tokens INTEGER NOT NULL,
+                    prompt_token_count INTEGER NOT NULL,
+                    candidates_token_count INTEGER NOT NULL,
+                    total_token_count INTEGER NOT NULL,
                     timestamp TIMESTAMP WITH TIME ZONE NOT NULL
                 )
             """)
@@ -77,9 +72,8 @@ def save_conversation(conversation_id, question, answer_data, timestamp=None):
             cur.execute(
                 """
                 INSERT INTO conversations 
-                    (id, question, answer, response_time, relevance, relevance_explanation, 
-                    prompt_tokens, completion_tokens, total_tokens, eval_prompt_tokens, 
-                    eval_completion_tokens, eval_total_tokens, timestamp)
+                    (id, question, answer, response_time,  
+                    prompt_token_count, candidates_token_count, total_token_count, timestamp)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """,
                 (
@@ -87,14 +81,9 @@ def save_conversation(conversation_id, question, answer_data, timestamp=None):
                     question,
                     answer_data["answer"],
                     answer_data["response_time"],
-                    answer_data["relevance"],
-                    answer_data["relevance_explanation"],
-                    answer_data["prompt_tokens"],
-                    answer_data["completion_tokens"],
-                    answer_data["total_tokens"],
-                    answer_data["eval_prompt_tokens"],
-                    answer_data["eval_completion_tokens"],
-                    answer_data["eval_total_tokens"],
+                    answer_data["prompt_token_count"],
+                    answer_data["candidates_token_count"],
+                    answer_data["total_token_count"],
                     timestamp
                 )
             )
@@ -129,9 +118,6 @@ def get_recent_conversations(limit=5, relevance=None):
                 FROM conversations c
                 LEFT JOIN feedback f ON c.id = f.conversation_id
             """
-            if relevance:
-                query += f" WHERE c.relevance = '{relevance}'"
-            query += " ORDER BY c.timestamp DESC LIMIT %s"
 
             cur.execute(query, (limit,))
             return cur.fetchall()

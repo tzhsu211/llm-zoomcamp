@@ -4,22 +4,46 @@ from sentence_transformers import SentenceTransformer
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
+from typing import List, Dict
+from time import time
 
 load_dotenv('../.env')
 
 ELASTIC_URL = os.getenv("ELASTIC_URL")
 GOOGLE_API = os.getenv("GOOGLE_API_KEY")
+INDEX_NAME = os.getenv("INDEX_NAME")
 
 es_client = Elasticsearch(ELASTIC_URL)
 ollama_client = OpenAI(base_url=OLLAMA_URL, api_key="ollama")
 
 model = SentenceTransformer("multi-qa-MiniLM-L6-cos-v1")
-gemini = genai.GenerativeModel('gemini-pro', api_key = GOOGLE_API)
+genai.configure(api_key= GOOGLE_API)
+gemini = genai.GenerativeModel('gemini-pro')
 
-def hybrid_search(query: str, field: str, vegan: bool = False, boost: float = 0.7) -> List:
+prompt_template = """
+You're a health supplement expert. Answer the QUESTION based on the CONTEXT from our health supplement database.
+Use only the facts from the CONTEXT when answering the QUESTION.
+
+QUESTION: {question}
+
+CONTEXT: 
+{context}
+""".strip()
+
+context_template = """
+name: {name}
+purpose: {purpose}
+who_should_not_use: {who_should_not_use}
+common_side_effects: {common_side_effects}
+recommended_dosage: {recommended_dosage}
+source: {source}
+vegan_friendly: {vegan_friendly}
+""".strip()
+
+def hybrid_search(query: str, vegan: bool = False, boost: float = 0.7) -> List:
 
     query_v = model.encode(query)
-    vector_field = field+'v'
+    vector_field = 'combinev'
     
     knn_search_hybird = {
         'field': vector_field,
@@ -63,7 +87,7 @@ def hybrid_search(query: str, field: str, vegan: bool = False, boost: float = 0.
         '_source':['name', 'purpose', 'who_should_not_use', 'common_side_effects', 'vegan_friendly']       
     }
 
-    response = es_client.search(index = es_index, body= search_query)
+    response = es_client.search(index = INDEX_NAME, body= search_query)
 
     result = []
     for hits in response['hits']['hits']:
@@ -71,24 +95,38 @@ def hybrid_search(query: str, field: str, vegan: bool = False, boost: float = 0.
     return result
 
 
-def build_prompt(query, search_results):
-    prompt_template = """
-You're a health supplement expert. Answer the QUESTION based on the CONTEXT from our health supplement database.
-Use only the facts from the CONTEXT when answering the QUESTION.
+def build_prompt(query, search_result):
 
-QUESTION: {question}
+    context = ""
 
-CONTEXT: 
-{context}
-""".strip()
+    for doc in search_result:
+        context += context_template.format(**doc) + "\n\n"
 
-    entry_template = """
-name: {name}
-purpose: {purpose}
-who_should_not_use: {who_should_not_use}
-common_side_effects: {common_side_effects}
-recommended_dosage: {recommended_dosage}
-source: {source}
-vegan_friendly: {vegan_friendly}
-""".strip()
-    return prompt_template.format(question=query, context=context).strip()
+    return prompt_template.format(question = query, context = context).strip()
+
+def llm(prompt):
+    response = gemini.generate_content(prompt).text
+    return response
+
+
+def rag(query, vegan):
+
+    t0 = time()
+
+    search_result = hybrid_search(query, vegan)
+    prompt = build_prompt(query, search_result)
+    response = llm(prompt)
+
+    t1 = time()
+
+    time_spent = t1 - t0
+
+    answer_data = {
+        'answer':response.text,
+        'response_time': time_spent,
+        'prompt_token_count': response.usage_metadata.prompt_token_count,
+        'candidates_token_count': response.usage_metadata.candidates_token_count,
+        'total_token_count': response.usage_metadata.total_token_count
+    }
+
+    return answer_data

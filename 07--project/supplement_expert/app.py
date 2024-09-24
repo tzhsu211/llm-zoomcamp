@@ -4,6 +4,7 @@ from db import save_conversation, save_feedback, get_answer_data, get_recent_con
 from datetime import datetime
 from ingestion import initialize_data
 from dotenv import load_dotenv
+from assistant import rag
 
 load_dotenv('../.env')
 
@@ -11,13 +12,8 @@ def print_log(message):
     print(message, flush=True)
 
 def ask_question(question, is_vegan):
-    # 在這裡加入向後端或服務器發送問題的邏輯
-    # 這是一個示例假設的接口
-    response = requests.post('http://localhost:5000/ask', json={
-        'question': question,
-        'vegan': is_vegan
-    })
-    return response.json()
+    answer_data = rag(question, is_vegan)
+    return answer_data
 
 def main():
     
