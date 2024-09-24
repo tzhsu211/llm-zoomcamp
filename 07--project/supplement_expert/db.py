@@ -8,6 +8,13 @@ from dotenv import load_dotenv
 load_dotenv('../.env')
 
 def get_db_connection():
+    POSTGRES_HOST = os.getenv("POSTGRES_HOST")
+    POSTGRES_DB = os.getenv("POSTGRES_DB")
+    POSTGRES_USER = os.getenv("POSTGRES_USER")
+    print("Loaded environment variables:")
+    print(f"POSTGRES_HOST: {POSTGRES_HOST}")
+    print(f"POSTGRES_DB: {POSTGRES_DB}")
+    print(f"POSTGRES_USER: {POSTGRES_USER}")
     return psycopg2.connect(
         host=os.getenv("POSTGRES_HOST"),
         database=os.getenv("POSTGRES_DB"),
@@ -16,7 +23,7 @@ def get_db_connection():
     )
 
 
-def init_db():
+def init_db():    
     conn = get_db_connection()
     try:
         with conn.cursor() as cur:

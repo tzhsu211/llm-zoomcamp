@@ -9,7 +9,7 @@ from db import init_db
 
 load_dotenv('../.env')
 
-ELASTIC_URL = os.getenv("ELASTIC_URL_LOCAL")
+ELASTIC_URL = os.getenv("ELASTIC_URL")
 MODEL_NAME = os.getenv("MODEL_NAME")
 INDEX_NAME = os.getenv("INDEX_NAME")
 
@@ -126,6 +126,12 @@ def index_documents(es_client, documents, model):
 def main():
     # you may consider to comment <start>
     # if you just want to init the db or didn't want to re-index
+    print("Current working directory:", os.getcwd())
+    print("Loaded environment variables:")
+    print(f"ELASTIC_URL: {ELASTIC_URL}")
+    print(f"MODEL_NAME: {MODEL_NAME}")
+    print(f"INDEX_NAME: {INDEX_NAME}")
+
     print("Starting the indexing process...")
 
     documents = fetch_documents()
@@ -144,6 +150,13 @@ def main():
 def initialize_data():
     # you may consider to comment <start>
     # if you just want to init the db or didn't want to re-index
+
+    print("Current working directory:", os.getcwd())
+    print("Loaded environment variables:")
+    print(f"ELASTIC_URL: {ELASTIC_URL}")
+    print(f"MODEL_NAME: {MODEL_NAME}")
+    print(f"INDEX_NAME: {INDEX_NAME}")
+
     print("Starting the indexing process...")
 
     documents = fetch_documents()

@@ -7,6 +7,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY supplement_expert /app/supplement_expert
 
-CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "./supplement_expert/app.py"]
