@@ -125,30 +125,6 @@ def index_documents(es_client, documents, model):
     print(f"Indexed {len(documents)} documents")
 
 
-def main():
-    # you may consider to comment <start>
-    # if you just want to init the db or didn't want to re-index
-    print("Current working directory:", os.getcwd())
-    print("Loaded environment variables:")
-    print(f"ELASTIC_URL: {ELASTIC_URL}")
-    print(f"MODEL_NAME: {MODEL_NAME}")
-    print(f"INDEX_NAME: {INDEX_NAME}")
-
-    print("Starting the indexing process...")
-
-    documents = fetch_documents()
-    ground_truth = fetch_ground_truth()
-    model = load_model()
-    es_client = setup_elasticsearch()
-    index_documents(es_client, documents, model)
-    # you may consider to comment <end>
-
-    print("Initializing database...")
-    init_db()
-
-    print("Indexing process completed successfully!")
-
-
 def initialize_data():
     # you may consider to comment <start>
     # if you just want to init the db or didn't want to re-index

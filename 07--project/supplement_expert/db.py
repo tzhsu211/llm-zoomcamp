@@ -74,7 +74,7 @@ def save_conversation(conversation_id, question, answer_data, timestamp=None):
                 INSERT INTO conversations 
                     (id, question, answer, response_time,  
                     prompt_token_count, candidates_token_count, total_token_count, timestamp)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                 """,
                 (
                     conversation_id,
