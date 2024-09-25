@@ -1,4 +1,4 @@
-import google.generationai as genai
+import google.generativeai as genai
 from elasticsearch import Elasticsearch
 from sentence_transformers import SentenceTransformer
 import os
@@ -14,7 +14,6 @@ GOOGLE_API = os.getenv("GOOGLE_API_KEY")
 INDEX_NAME = os.getenv("INDEX_NAME")
 
 es_client = Elasticsearch(ELASTIC_URL)
-ollama_client = OpenAI(base_url=OLLAMA_URL, api_key="ollama")
 
 model = SentenceTransformer("multi-qa-MiniLM-L6-cos-v1")
 genai.configure(api_key= GOOGLE_API)
@@ -43,10 +42,9 @@ vegan_friendly: {vegan_friendly}
 def hybrid_search(query: str, vegan: bool = False, boost: float = 0.7) -> List:
 
     query_v = model.encode(query)
-    vector_field = 'combinev'
     
     knn_search_hybird = {
-        'field': vector_field,
+        'field': 'combinev',
         'query_vector' :query_v,
         'k':5,
         'num_candidates': 10000,
@@ -58,7 +56,7 @@ def hybrid_search(query: str, vegan: bool = False, boost: float = 0.7) -> List:
             'must':{
                 'multi_match':{
                     'query': query,
-                    'fields': field,
+                    'fields': 'combine',
                     'type':'best_fields',
                     'boost': 1-boost
                 }
@@ -84,7 +82,7 @@ def hybrid_search(query: str, vegan: bool = False, boost: float = 0.7) -> List:
         'knn': knn_search_hybird,
         'query':keyword_search_hybrid,
         'size':5,
-        '_source':['name', 'purpose', 'who_should_not_use', 'common_side_effects', 'vegan_friendly']       
+        '_source':['name', 'purpose', 'who_should_not_use', 'common_side_effects', 'recommended_dosage', 'source', 'vegan_friendly']       
     }
 
     response = es_client.search(index = INDEX_NAME, body= search_query)
@@ -102,10 +100,11 @@ def build_prompt(query, search_result):
     for doc in search_result:
         context += context_template.format(**doc) + "\n\n"
 
+    print('ZZZZZZZZZ',GOOGLE_API)
     return prompt_template.format(question = query, context = context).strip()
 
 def llm(prompt):
-    response = gemini.generate_content(prompt).text
+    response = gemini.generate_content(prompt)
     return response
 
 

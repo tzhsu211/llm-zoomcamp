@@ -4,6 +4,7 @@ from sentence_transformers import SentenceTransformer
 from elasticsearch import Elasticsearch
 from dotenv import load_dotenv
 import json
+import time
 
 from db import init_db
 
@@ -62,6 +63,7 @@ def fetch_ground_truth():
 
 def setup_elasticsearch():
     print("Setting up Elasticsearch...")
+    time.sleep(10)
     es_client = Elasticsearch(ELASTIC_URL)
 
     index_settings = {

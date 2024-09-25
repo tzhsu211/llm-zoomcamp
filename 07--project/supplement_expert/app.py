@@ -21,7 +21,6 @@ def main():
 
     st.title("Supplement Expert")
     
-    # 用戶輸入問題
     with st.form(key='question_form'):
         question = st.text_input("Question:")
         is_vegan = st.checkbox("I am a vegan!")
