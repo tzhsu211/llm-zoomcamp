@@ -3,6 +3,7 @@ import psycopg2
 from psycopg2.extras import DictCursor
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from typing import List, Dict
 from dotenv import load_dotenv
 
 load_dotenv('../.env')
@@ -27,17 +28,14 @@ def init_db():
     conn = get_db_connection()
     try:
         with conn.cursor() as cur:
-            # 先删除 feedback 表
             cur.execute("DROP TABLE IF EXISTS feedback;")
-            # 然后删除 conversations 表
             cur.execute("DROP TABLE IF EXISTS conversations;")
-
-            # 创建 conversations 表
             cur.execute("""
                 CREATE TABLE conversations (
                     id TEXT PRIMARY KEY,
                     question TEXT NOT NULL,
                     answer TEXT NOT NULL,
+                    model TEXT NOT NULL,
                     response_time FLOAT NOT NULL,
                     prompt_token_count INTEGER NOT NULL,
                     candidates_token_count INTEGER NOT NULL,
@@ -62,7 +60,7 @@ def init_db():
 
 
 
-def save_conversation(conversation_id, question, answer_data, timestamp=None):
+def save_conversation(conversation_id: str, question: str, answer_data: dict, llm_model: str, timestamp=None):
     if timestamp is None:
         timestamp = datetime.utcnow().replace(tzinfo=ZoneInfo("UTC"))
     
@@ -72,14 +70,15 @@ def save_conversation(conversation_id, question, answer_data, timestamp=None):
             cur.execute(
                 """
                 INSERT INTO conversations 
-                    (id, question, answer, response_time,  
+                    (id, question, answer, model, response_time,  
                     prompt_token_count, candidates_token_count, total_token_count, timestamp)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """,
                 (
                     conversation_id,
                     question,
                     answer_data["answer"],
+                    llm_model,
                     answer_data["response_time"],
                     answer_data["prompt_token_count"],
                     answer_data["candidates_token_count"],
@@ -93,7 +92,7 @@ def save_conversation(conversation_id, question, answer_data, timestamp=None):
 
 
 
-def save_feedback(conversation_id, feedback, timestamp=None):
+def save_feedback(conversation_id: str, feedback: int, timestamp=None):
     if timestamp is None:
         timestamp = datetime.utcnow().replace(tzinfo=ZoneInfo("UTC"))
 
@@ -109,7 +108,7 @@ def save_feedback(conversation_id, feedback, timestamp=None):
         conn.close()
 
 
-def get_recent_conversations(limit=5, relevance=None):
+def get_recent_conversations():
     conn = get_db_connection()
     try:
         with conn.cursor(cursor_factory=DictCursor) as cur:
@@ -117,9 +116,10 @@ def get_recent_conversations(limit=5, relevance=None):
                 SELECT c.*, f.feedback
                 FROM conversations c
                 LEFT JOIN feedback f ON c.id = f.conversation_id
+                ORDER BY c.timestamp DESC
+                LIMIT 3
             """
-
-            cur.execute(query, (limit,))
+            cur.execute(query)
             return cur.fetchall()
     finally:
         conn.close()
@@ -139,19 +139,19 @@ def get_feedback_stats():
     finally:
         conn.close()
 
-def get_answer_data(conversation_id):
-    conn = get_db_connection()
-    try:
-        with conn.cursor(cursor_factory=DictCursor) as cur:
-            cur.execute("""
-                SELECT *
-                FROM conversations
-                WHERE id = %s
-            """, (conversation_id,))
-            result = cur.fetchone()
-            if result:
-                return dict(result)
-            else:
-                return None
-    finally:
-        conn.close()
+# def get_answer_data(conversation_id):
+#     conn = get_db_connection()
+#     try:
+#         with conn.cursor(cursor_factory=DictCursor) as cur:
+#             cur.execute("""
+#                 SELECT *
+#                 FROM conversations
+#                 WHERE id = %s
+#             """, (conversation_id,))
+#             result = cur.fetchone()
+#             if result:
+#                 return dict(result)
+#             else:
+#                 return None
+#     finally:
+#         conn.close()
