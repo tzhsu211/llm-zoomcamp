@@ -64,4 +64,13 @@ Below is a example for the file:
 * LLM: google gemini pro and ollama phi3
 
 ## Set up
+This app is fully encapsulated within a Docker container. Before running it, simply set up the **.env file** and execute "docker-compose up -d --build" to get started.
 
+The operations performed within Docker include:
+
+1. Setting up the environment with Python 3.9
+2. Installing the necessary modules
+3. Configuring Ollama and pulling the Phi-3 model
+4 Verifying the Elasticsearch setup
+5. Verifying PostgreSQL setup
+6. Running app.py
