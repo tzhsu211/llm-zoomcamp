@@ -12,15 +12,20 @@ services:
     deploy:
       resources:
         limits:
-          memory: 2G 
+          memory: 2G
 
   ollama:
-    image: ollama/ollama
+    image: ollama/ollama:latest
     container_name: ollama
     volumes:
       - ollama:/root/.ollama
     ports:
       - "11434:11434"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:11434/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
   postgres:
     image: postgres:13
@@ -48,7 +53,6 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - MODEL_NAME=${MODEL_NAME}
       - INDEX_NAME=${INDEX_NAME}
-      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
     ports:
       - "${STREAMLIT_PORT:-8501}:8501"
     depends_on:

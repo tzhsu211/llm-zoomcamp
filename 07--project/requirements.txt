@@ -6,6 +6,7 @@ pandas
 scikit-learn
 openai
 streamlit
+requests
 python-docx
 jupyter
 sentence-transformers
