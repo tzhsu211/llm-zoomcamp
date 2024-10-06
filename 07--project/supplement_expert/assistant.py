@@ -19,8 +19,6 @@ es_client = Elasticsearch(ELASTIC_URL)
 ollama_client = OpenAI(base_url=OLLAMA_URL, api_key="ollama")
 
 model = SentenceTransformer(MODEL_NAME)
-genai.configure(api_key= GOOGLE_API)
-gemini = genai.GenerativeModel('gemini-pro')
 
 prompt_template = """
 You're a health supplement expert. Answer the QUESTION based on the CONTEXT from our health supplement database.
@@ -105,11 +103,14 @@ def build_prompt(query: str, search_result: list):
 
     return prompt_template.format(question = query, context = context).strip()
 
-def llm(llm_model: str, prompt:str):
+def llm(llm_model: str, prompt:str, api: str):
 
     if llm_model == "Google Gemini pro":
-        response = gemini.generate_content(prompt)
-    else:
+            genai.configure(api_key= api)
+            gemini = genai.GenerativeModel('gemini-pro')
+            response = gemini.generate_content(prompt)
+
+    elif llm_model == "Ollama phi3":
         response = ollama_client.chat.completions.create(
             model = "phi3",
             messages=[{"role": "user", "content": prompt}]
@@ -118,13 +119,13 @@ def llm(llm_model: str, prompt:str):
     return response
 
 
-def rag(llm_model: str, query: list, vegan: bool):
+def rag(llm_model: str, query: list, vegan: bool, api: str):
 
     t0 = time()
 
     search_result = hybrid_search(query, vegan)
     prompt = build_prompt(query, search_result)
-    response = llm(llm_model, prompt)
+    response = llm(llm_model, prompt, api)
 
     t1 = time()
 

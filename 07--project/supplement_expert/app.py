@@ -13,10 +13,12 @@ load_dotenv('../.env')
 def print_log(message: str):
     print(message, flush=True)
 
-def ask_question(llm_model:str, question: str, is_vegan: bool = False):
+def ask_question(llm_model:str, question: str, api, is_vegan: bool = False):
     # Generate and save question to db
     try:
-        answer_data = rag(llm_model, question, is_vegan) 
+        print_log(f"rag func: llm model: {llm_model}, query: {question}, is vegan: {is_vegan}, api: {api}")
+        answer_data = rag(llm_model, question, is_vegan, api) 
+        print_log(answer_data)
         conversation_id = st.session_state.conversation_id
         save_conversation(conversation_id, question, answer_data, llm_model)
     
@@ -67,21 +69,25 @@ def main():
             "LLM model:",
             [ "Ollama phi3", "Google Gemini pro"]
         )
+        api = st.text_input("Please input LLM API:")
         submit_button = st.form_submit_button("🔍")
 
 
     if submit_button:
 
         if not question:
-
             st.warning("Please enter a question before submitting.")
+
+        elif llm_model != "Ollama phi3" and not api:
+            st.warning("Please provide LLM api.")
 
         else:
 
             with st.spinner("Processing..."):
+                print_log(f"model selected: {llm_model}, api: {api}, ")
 
                 st.session_state.conversation_id = str(uuid.uuid4())
-                answer_data = ask_question(llm_model, question, is_vegan)
+                answer_data = ask_question(llm_model, question, api, is_vegan)
                 st.session_state.answer_data = answer_data
                 st.success("Completed!")
             
@@ -129,7 +135,7 @@ def main():
                 st.write("**Feedback:** 👎")
 
             st.write(f"**Model:** {convo['model']}")
-            st.write(f"**Time Stamp:**{convo['timestamp']}")
+            st.write(f"**Time Stamp:** {convo['timestamp']}")
             st.write("---")
     else:
         st.write("No recent conversations found.")
