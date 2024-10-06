@@ -26,8 +26,7 @@ I asked ChatGPT to generate information for common nutritional supplements. Ulti
 * vegan_friendly: A boolean value indicating whether the supplement is suitable for vegans.
 
 Below is an example of the dataset in JSON format:
-
-
+``` json
 {
     "name": "Vitamin C",
     "purpose": "Immune support and antioxidant",
