@@ -22,7 +22,8 @@ All data is in the `data` folder.
 ### Supplement.json
 Data for 53 different types of nutritional supplements has been generated using ChatGPT. Each entry in the dataset includes the following fields:
 * name: The name of the nutritional supplement.
-* purpose: The primary purpose of the nutritional supplement, explaining its benefi ts.
+* purpose: The primary purpose of the nutritional supplement, explaining its benefi
+* Tts.
 * who_should_not_use: A description of individuals who should avoid the supplement due to potential health risks.
 * common_side_effects: A list of common side effects associated with the supplement.
 * recommended_dosage: The suggested daily dosage for optimal benefits.
@@ -80,3 +81,36 @@ docker-compose up -d --build
 4. Verifying the Elasticsearch setup
 5. Verifying PostgreSQL setup
 6. Running `app.py`
+
+## Project Files Overview
+
+This section provides an overview of the key files and folders in the project, along with their respective roles.
+
+1. **data folder**
+   - Contains all datasets, including `supplement.json`, which provides information on various nutritional supplements.
+
+2. **rag_evaluation folder**
+   - Contains Jupyter notebooks for testing the best parameters for hybrid search using RAG (Retrieval-Augmented Generation) techniques, along with calculations for hit rate and Mean Reciprocal Rank (MRR).
+
+3. **supplement_expert folder**
+   - This folder includes the main application logic and configuration files:
+     1. **app.py**: The main Streamlit application structure.
+     2. **assistant.py**: Defines functions related to Elastic Search and RAG, handling user queries and responses.
+     3. **db.py**: Manages database connections and setup, ensuring smooth interaction with the database.
+     4. **ingestion.py**: Handles data ingestion, initialization, and preparation of datasets for the application.
+4. **docker-compose.yaml**
+   - Defines the services used in the application, including:
+     - **elasticsearch**: For storing and searching supplement data.
+     - **ollama**: For managing the LLM model.
+     - **postgres**: For database management.
+     - **streamlit**: The main application interface.
+     - **grafana**: For monitoring and visualization.
+
+5. **Dockerfile**
+   - Contains instructions for building the Streamlit application Docker image. It sets up the environment, installs dependencies, and specifies the entry point for the application.
+
+6. **entrypoint.sh**
+   - A shell script that ensures all services (Ollama, Elasticsearch, Postgres) are ready before starting the Streamlit application. It also pulls the required Phi-3 model and checks its availability.
+
+7. **requirements.txt**
+   - Lists the Python dependencies needed for the project. This file is used to install the required packages in the Docker container.
