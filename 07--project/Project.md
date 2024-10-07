@@ -109,7 +109,8 @@ This section provides an overview of the key files and folders in the project, a
    - Contains instructions for building the Streamlit application Docker image. It sets up the environment, installs dependencies, and specifies the entry point for the application.
 
 6. **entrypoint.sh**
-   - A shell script that ensures all services (Ollama, Elasticsearch, Postgres) are ready before starting the Streamlit application. It also pulls the required Phi-3 model and checks its availability.
+   - A shell script that ensures all services (Ollama, Elasticsearch, Postgres) are ready before starting the Streamlit application. It also pulls the required Phi-3 model and checks its availability. 
+   - If you are using Windows, ensure that the `sh` file is saved with LF (Line Feed) encoding when running Docker Compose to avoid execution issues.
 
 7. **requirements.txt**
    - Lists the Python dependencies needed for the project. This file is used to install the required packages in the Docker container.
@@ -125,4 +126,72 @@ I use Grafana for data monitoring. I generated 16 data entries in the app, and t
 
 You can access the Grafana dashboard at `localhost:3000`, as the port is defined in the Docker setup.
 
+## RAG
+### Hybrid Search
+The following function implements a hybrid search combining both KNN (K-Nearest Neighbors) and keyword search methods. The `boost` parameter is used to adjust the weight between the two search approaches.
+```python
+def hybrid_search(query: str, field: str, vegan: bool = False, boost: float = 0.5) -> List:
+    query_v = model.encode(query)
+    vector_field = field + 'v'
 
+    knn_search_hybrid = {
+        'field': vector_field,
+        'query_vector': query_v,
+        'k': 5,
+        'num_candidates': 10000,
+        'boost': boost,
+    }
+
+    keyword_search_hybrid = {
+        'bool': {
+            'must': {
+                'multi_match': {
+                    'query': query,
+                    'fields': field,
+                    'type': 'best_fields',
+                    'boost': 1 - boost
+                }
+            }
+        }
+    }
+
+    if vegan:
+        knn_search_hybrid['filter'] = {
+            'term': {
+                'vegan_friendly': True
+            }
+        }
+        keyword_search_hybrid['bool']['filter'] = {
+            'term': {
+                'vegan_friendly': True
+            }
+        }
+
+    search_query = {
+        'knn': knn_search_hybrid,
+        'query': keyword_search_hybrid,
+        'size': 5,
+        '_source': ['name', 'purpose', 'who_should_not_use', 'common_side_effects', 'vegan_friendly']       
+    }
+    response = es_client.search(index=es_index, body=search_query)
+    result = []
+    for hits in response['hits']['hits']:
+        result.append(hits['_source'])
+    return result
+```
+In this code:
+
+* The `field` parameter specifies which field to use for the search.
+* The `field+v` is the corresponding vectorized content of that field.
+* The hybrid search utilizes both KNN and keyword search to provide more relevant results.
+
+![image](https://github.com/user-attachments/assets/cee15769-35df-43e1-8599-03e8bb742544)
+Here, I use 0.7 as the boost rate in hybrid search (70% of KNN and 30% of keyword search).
+
+### LLM as a judge
+I used Google Gemini pro as a judge for the augmented questions, here the result:
+| Relevance         | Count | Percentage |
+|-------------------|-------|------------|
+| RELEVANT          | 225   | 84.9%      |
+| PARTLY_RELEVANT   | 36    | 13.6%      |
+| NON_RELEVANT      | 4     | 0.2%       |
