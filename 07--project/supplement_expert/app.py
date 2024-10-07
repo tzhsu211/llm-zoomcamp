@@ -69,7 +69,7 @@ def main():
             "LLM model:",
             [ "Ollama phi3", "Google Gemini pro"]
         )
-        api = st.text_input("Please input LLM API:")
+        api = st.text_input("Please input LLM API:",key="chatbot_api_key", type="password")
         submit_button = st.form_submit_button("🔍")
 
 
@@ -117,6 +117,7 @@ def main():
         
         if st.session_state.feedback_given:
             st.write("Feedback is sent. Thank you.")
+    
 
     
     st.subheader("Recent Conversations")
