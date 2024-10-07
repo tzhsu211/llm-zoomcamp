@@ -73,7 +73,6 @@ This app is fully encapsulated within a Docker container. Before running it, fol
 ``` bash
 docker-compose up -d --build
 ```
-
 ### Operations Performed in Docker
 1. Setting up the environment with Python 3.9 slim
 2. Installing the necessary modules
@@ -114,3 +113,16 @@ This section provides an overview of the key files and folders in the project, a
 
 7. **requirements.txt**
    - Lists the Python dependencies needed for the project. This file is used to install the required packages in the Docker container.
+  
+## Data Monitoring
+I use Grafana for data monitoring. I generated 16 data entries in the app, and the dashboard includes the following:
+<kbd><![image](https://github.com/user-attachments/assets/d45de87a-9af5-42dc-82a3-f5a32027bad6)/></kbd>
+1. **Latest Five Entries**: Displays the five most recent records.
+2. **LLM Model Usage Statistics**: Shows the frequency of different LLM models used.
+3. **Response Time for Both Models**: Compares the response times of Google Gemini Pro and Ollama Phi3.
+4. **Total Token Count for Both Models**: Displays the total token usage for both models across all sessions.
+5. **User Feedback**: Shows user feedback on the model responses.
+
+You can access the Grafana dashboard at `localhost:3000`, as the port is defined in the Docker setup.
+
+
