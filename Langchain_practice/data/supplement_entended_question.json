@@ -1,0 +1,479 @@
+{
+    "Vitamin C": {
+        "questions": [
+            "I have been experiencing persistent fatigue and frequent headaches. What types of supplements are generally recommended to help alleviate these symptoms and improve overall energy levels?",
+            "I suffer from kidney stones and am cautious about using supplements. Are there any supplements that I should avoid, and what alternatives might be safe and beneficial for someone with my condition?",
+            "I am looking to strengthen my immune system and improve my antioxidant levels. What types of supplements are known to support immune health and offer antioxidant benefits?",
+            "As someone who follows a vegan diet, I want to make sure that any supplements I take are compatible with my dietary choices. What should I look for in supplements to ensure they are vegan-friendly and still effective?",
+            "I often experience digestive issues, including upset stomach and headaches. Can you suggest any supplements that are known for being gentle on the stomach and have minimal side effects?"
+        ]
+    },
+    "Vitamin D": {
+        "questions": [
+            "I have been experiencing frequent fatigue and muscle aches. What types of supplements are typically recommended to help with these symptoms and support overall bone health?",
+            "I am dealing with high calcium levels and need to be cautious about my supplement intake. Are there any general guidelines or alternatives for someone in my situation?",
+            "I want to strengthen my immune system and improve my bone health. What are some common supplements known to support these areas effectively?",
+            "As someone who follows a vegan diet, I need to ensure that any supplements I take align with my dietary choices. What should I look for in vegan-friendly supplements to make sure they are both effective and safe?",
+            "I have noticed that some supplements I take cause nausea and dry mouth. Are there specific types of supplements known to have these side effects, and how can I manage them?"
+        ]
+    },
+    "Vitamin E": {
+        "questions": [
+            "I am experiencing significant fatigue and lack of energy throughout the day. Can you suggest any supplements that may help improve my energy levels?",
+            "I have been experiencing persistent headaches and migraines. Are there any health supplements that can aid in reducing the frequency or severity of these headaches?",
+            "My skin has become dull and dry lately. Are there any supplements that can help nourish and improve the appearance of my skin?",
+            "I am considering taking a health supplement to boost my overall health. What should I look for when selecting a supplement to ensure it is safe and effective?",
+            "I am allergic to peanuts. Are there any specific health supplements I should avoid taking due to this allergy?"
+        ]
+    },
+    "Vitamin B12": {
+        "questions": [
+            "I'm feeling fatigued and having trouble concentrating. Could a health supplement help?",
+            "I'm concerned about my risk of developing heart disease. Are there any supplements that can help?",
+            "I'm allergic to certain ingredients in many supplements. How can I find a supplement that is safe for me?",
+            "What are the benefits of Vitamin B12 supplements?",
+            "Are Vitamin B12 supplements suitable for people with certain types of anemia?"
+        ]
+    },
+    "Vitamin B6": {
+        "questions": [
+            "I'm experiencing fatigue and difficulty concentrating. Are there any health supplements that can support mental and physical energy levels?",
+            "I've been experiencing occasional headaches and irritability. Could certain health supplements help alleviate these symptoms?",
+            "Can health supplements contribute to improving metabolism and overall energy levels?",
+            "Are there any supplements that are particularly beneficial for vegans or vegetarians?",
+            "What should I keep in mind when considering health supplements for individuals with kidney health concerns?"
+        ]
+    },
+    "Calcium": {
+        "questions": [
+            "I am experiencing constant fatigue and would like to improve my energy levels. Any recommendations?",
+            "Is there a supplement that can support my joint health as I age?",
+            "I often suffer from digestive issues like constipation. Are there any supplements that can help relieve these symptoms without causing further discomfort?",
+            "What if I have a dairy allergy? Can I still benefit from supplements that support bone health?",
+            "Can certain supplements help reduce the risk of developing osteoporosis?"
+        ]
+    },
+    "Iron": {
+        "questions": [
+            "I'm feeling weak and tired all the time, and I've been advised that I might have iron deficiency. Is taking an iron supplement the best way to improve my symptoms?",
+            "I've been taking an iron supplement for a few days now, and I've noticed I'm getting more headaches and nausea. Should I stop taking it or is this a normal side effect?",
+            "I have a shellfish allergy. Am I at risk of an allergic reaction if I take an iron supplement?",
+            "I'm vegan and am looking for an effective iron supplement. Are there any vegan-friendly supplements available?",
+            "My doctor said I shouldn't take iron supplements because I have a condition called hemochromatosis. What exactly is this condition and how does it affect my ability to take iron?"
+        ]
+    },
+    "Magnesium": {
+        "questions": [
+            "I'm experiencing frequent muscle cramps and numbness. Could Magnesium help alleviate these symptoms?",
+            "I have a sensitive digestive system. Are there any potential interactions between Magnesium and my current medications that I should be aware of?",
+            "Is Magnesium compatible with a plant-based diet?",
+            "I'm considering taking Magnesium to improve my overall health, but I'm concerned about possible side effects. What are the common reactions I should keep an eye out for?",
+            "I have a history of kidney problems. Is it safe for me to use Magnesium supplements?"
+        ]
+    },
+    "Zinc": {
+        "questions": [
+            "I've been experiencing frequent colds and wound healing has been slow lately. Could Zinc supplements help boost my immune system and support wound healing?",
+            "I'm considering taking Zinc supplements, but I have a history of kidney issues. Are there any health conditions for which Zinc usage is contraindicated?",
+            "After taking Zinc supplements, I've noticed a persistent metallic taste in my mouth. Is this a common side effect and should I be concerned?",
+            "I'm allergic to seafood. Does Zinc derived from shellfish pose any risks for me, or is it safe to consume in other forms?",
+            "I follow a vegan diet. Are there any vegan-friendly Zinc supplements available, or should I consider alternative sources?"
+        ]
+    },
+    "Fish Oil": {
+        "questions": [
+            "I have high blood pressure. Can Fish Oil supplements help lower it?",
+            "I've been experiencing joint pain lately. Could taking Fish Oil supplements alleviate the discomfort?",
+            "I'm allergic to shellfish. Should I avoid Fish Oil supplements as well?",
+            "My husband has a sensitive stomach. Would Fish Oil supplements be likely to cause any digestive issues for him?",
+            "I'm a vegan and want to ensure I'm getting adequate Omega-3 fatty acids. Are Fish Oil supplements suitable for me?"
+        ]
+    },
+    "Why Protein": {
+        "questions": [
+            "I've been experiencing stomach upset recently, with symptoms like gas, bloating, and cramps. Can these symptoms be linked to consuming certain health supplements, such as whey protein?",
+            "As someone with lactose intolerance, I'm curious if there are any health supplements that I should avoid. Is whey protein suitable for individuals with my condition?",
+            "I'm interested in trying a supplement to support muscle growth and repair after workouts. However, I'm concerned about the potential side effects. Can you provide some insight into the common side effects associated with whey protein?",
+            "I'm looking for a vegan-friendly protein supplement. Does whey protein meet this requirement, or are there any other options you recommend for plant-based diets?",
+            "I'm considering adding whey protein to my daily routine for its muscle-building benefits. Are there any general health concerns I should be aware of before using it?"
+        ]
+    },
+    "Amino Acids": {
+        "questions": [
+            "I suffer from frequent headaches and nausea. Could amino acid supplements contribute to these symptoms or alleviate them?",
+            "I'm allergic to some fish species. Does the manufacturing process of amino acid supplements involve any risk of cross-contamination?",
+            "As someone with liver disease, is it safe for me to take amino acid supplements?",
+            "I'm a vegan and keen on maintaining a plant-based diet. Are amino acid supplements compatible with my lifestyle?",
+            "I'm experiencing muscle soreness after exercise. Would amino acid supplements help accelerate my muscle recovery?"
+        ]
+    },
+    "Hebal Extracts": {
+        "questions": [
+            "I'm experiencing frequent headaches and fatigue. Can Herbal Extracts help alleviate these symptoms?",
+            "I'm concerned about my overall health and well-being. Is Herbal Extracts suitable for individuals with a history of allergies?",
+            "What are the most common side effects associated with taking Herbal Extracts?",
+            "As a vegan, I'm looking for supplements that align with my lifestyle. Can you confirm if Herbal Extracts is vegan-friendly?",
+            "How do Herbal Extracts support general health benefits?"
+        ]
+    },
+    "Grape Seed Extract": {
+        "questions": [
+            "I'm experiencing frequent headaches and dizziness. Could taking Grape Seed Extract be a potential cause or provide relief?",
+            "I have a history of allergic reactions to certain plant-based supplements. Is Grape Seed Extract safe for me to consume?",
+            "I'm following a vegan lifestyle. Can I incorporate Grape Seed Extract into my diet without any dietary restrictions?",
+            "I've heard that antioxidants can help protect against heart disease. Would Grape Seed Extract be beneficial for improving my cardiovascular health?",
+            "Are there any potential interactions between Grape Seed Extract and other medications I'm taking?"
+        ]
+    },
+    "Collagen": {
+        "questions": [
+            "I've been experiencing joint pain and stiffness. Besides taking collagen, are there any other supplements that might help alleviate these issues?",
+            "I'm prone to food allergies, particularly seafood. Are there any precautions I should take when considering collagen supplements?",
+            "I'm concerned about potential side effects from taking collagen. How can I minimize the risk of digestive problems or allergic reactions?",
+            "I'm looking for ways to improve my skin elasticity. Can collagen supplements alone provide significant benefits, or are there other lifestyle changes I should consider?",
+            "As a vegan, I'm interested in understanding if there are any suitable alternatives to collagen supplements that maintain the same health benefits."
+        ]
+    },
+    "Probiotics": {
+        "questions": [
+            "I'm experiencing digestive discomfort, including gas and bloating. Is it possible that probiotics could help alleviate these symptoms?",
+            "I have a compromised immune system. Are probiotics safe for me to use?",
+            "I'm vegan and looking for a health supplement to support my gut health. Can probiotics provide the necessary support?",
+            "What are some general health benefits that probiotics may offer, beyond their impact on gut health?",
+            "I'm considering taking probiotics for digestive issues. Are there any potential side effects I should be aware of?"
+        ]
+    },
+    "Ginseng Extract": {
+        "questions": [
+            "I have been feeling fatigued lately. Could ginseng extract be a suitable supplement to help improve my energy levels?",
+            "I have a history of high blood pressure. Is ginseng extract safe for me to consume?",
+            "I suffer from anxiety and insomnia. Would taking ginseng extract potentially worsen these conditions?",
+            "Are there any dietary restrictions or allergies I should be aware of before starting to take ginseng extract?",
+            "As a vegan, I am always mindful of my diet. Is ginseng extract a vegan-friendly supplement?"
+        ]
+    },
+    "Soy Isoflavones": {
+        "questions": [
+            "I'm experiencing hot flashes and night sweats, and my doctor suggested hormone replacement therapy. Would Soy Isoflavones be a suitable alternative to help alleviate these symptoms?",
+            "I have a family history of osteoporosis, and I'm worried about bone loss. Could Soy Isoflavones be beneficial in maintaining bone health?",
+            "I'm allergic to soy. Are there any known cross-reactivity concerns with Soy Isoflavones?",
+            "I've noticed some digestive issues after taking certain supplements. Are there any potential side effects I should be aware of when using Soy Isoflavones?",
+            "I'm on a vegan diet and looking for ways to support my overall health. Would Soy Isoflavones be compatible with my lifestyle?"
+        ]
+    },
+    "L-Carnitine": {
+        "questions": [
+            "I'm experiencing fatigue and low energy levels. Can L-Carnitine help improve my energy levels, and are there any potential side effects I should be aware of?",
+            "I'm concerned about my ability to lose weight. I've heard that L-Carnitine can support fat metabolism. Is this true, and if so, how might it benefit my weight loss journey?",
+            "I have a thyroid condition. Is it safe for me to take L-Carnitine? I want to ensure that it won't interfere with my thyroid function.",
+            "I'm following a vegan diet. Can I incorporate L-Carnitine into my daily routine without compromising my dietary restrictions?",
+            "I'm prone to nausea and gastrointestinal issues. Are there any potential side effects of L-Carnitine that I should be aware of, particularly related to digestion?"
+        ]
+    },
+    "Propolis": {
+        "questions": [
+            "I've been experiencing frequent colds and infections. Can propolis help boost my immune system and reduce my susceptibility to these illnesses?",
+            "I'm considering taking propolis for its wound-healing properties. However, I'm allergic to bee stings. Is propolis safe for me to use?",
+            "I have a sensitive stomach and am prone to gastrointestinal issues. Would propolis be likely to cause any digestive problems for me?",
+            "As a vegan, I'm conscious about using plant-based products. Is propolis suitable for vegans?",
+            "I'm looking for a natural supplement to support my overall health and well-being. Can propolis provide any benefits in this regard?"
+        ]
+    },
+    "Green Tea Extract": {
+        "questions": [
+            "I'm experiencing difficulty falling asleep after taking a green tea extract supplement. What other potential side effects should I be aware of?",
+            "Besides caffeine sensitivity, are there any other health conditions that may make Green Tea Extract unsuitable for me?",
+            "I'm vegan and looking for an antioxidant boost. How can Green Tea Extract fit into my diet?",
+            "Can Green Tea Extract help reduce my risk of specific chronic diseases?",
+            "I've heard Green Tea Extract can boost metabolism. How does it work, and what other factors influence metabolism?"
+        ]
+    },
+    "Pine Bark Extract": {
+        "questions": [
+            "I'm experiencing frequent headaches and dizziness. Could Pine Bark Extract be a potential cause?",
+            "I have allergies to a few different plant-based substances. Is Pine Bark Extract known to cause allergic reactions?",
+            "I'm trying to improve my overall circulation. Can Pine Bark Extract help with this?",
+            "Are there any gastrointestinal issues that I should be aware of when considering Pine Bark Extract?",
+            "I'm looking for a vegan-friendly health supplement. Is Pine Bark Extract suitable for my diet?"
+        ]
+    },
+    "Frankincense Extract": {
+        "questions": [
+            "I have been experiencing chronic joint pain. Could Frankincense Extract be a suitable supplement to reduce inflammation and alleviate pain?",
+            "I have a known allergy to tree resins. Is Frankincense Extract safe for me to use?",
+            "I have sensitive skin and a history of contact dermatitis. Are there any risks of skin irritation associated with using Frankincense Extract topically?",
+            "As a vegan, I am interested in pursuing natural anti-inflammatory options. Can you confirm if Frankincense Extract is suitable for a vegan lifestyle?",
+            "I have a sensitive stomach and am prone to nausea. Are there any precautions I should take or potential side effects to be aware of when using Frankincense Extract?"
+        ]
+    },
+    "Aloe Vera": {
+        "questions": [
+            "I'm experiencing frequent indigestion and bloating. Could Aloe Vera supplements help alleviate these symptoms, or are they more likely to worsen them?",
+            "I have a history of allergies to latex. Is it safe for me to take Aloe Vera supplements, or could there be a cross-reactivity risk?",
+            "I'm considering taking Aloe Vera for skin health, but I'm not sure if it's compatible with my current skincare routine. Are there any ingredients or products I should avoid combining with Aloe Vera?",
+            "Are Aloe Vera supplements suitable for vegans? I'm looking for a plant-based source of support for my digestive health.",
+            "I've heard that Aloe Vera supplements can have laxative effects. How common are these side effects, and is there anything I can do to mitigate them if I experience them?"
+        ]
+    },
+    "Squalene": {
+        "questions": [
+            "My skin has become increasingly dry and flaky recently. Can Squalene supplements help improve its moisture levels?",
+            "I have a shellfish allergy. Is Squalene safe for me to take, considering its marine origin?",
+            "I experience occasional indigestion and bloating. Will taking Squalene supplements worsen these symptoms?",
+            "As a vegan, I am mindful of animal-derived ingredients. Can I safely incorporate Squalene supplements into my diet?",
+            "What precautions should I take if I have a history of eczema before starting a course of Squalene supplements?"
+        ]
+    },
+    "Cod Liver Oil": {
+        "questions": [
+            "As someone with a seafood allergy, can I still benefit from the heart-supporting nutrients in Cod Liver Oil without triggering an allergic reaction?",
+            "I'm experiencing persistent joint pain. Can Cod Liver Oil potentially alleviate this discomfort, and if so, how long may it take to notice a positive impact?",
+            "I'm concerned about the potential side effects of Cod Liver Oil, especially the digestive issues. Are there any precautions I should take or alternative supplements that may be more suitable for me?",
+            "Can Cod Liver Oil interfere with any specific medications I'm currently taking? I'm taking [list of medications if applicable].",
+            "How does Cod Liver Oil compare to other popular heart and joint health supplements? What makes it unique or advantageous?"
+        ]
+    },
+    "Arginine": {
+        "questions": [
+            "I have been experiencing fatigue and muscle weakness. Could Arginine help improve my energy levels and muscle strength?",
+            "I have a history of kidney stones. Is Arginine safe for me to take?",
+            "I am allergic to certain types of nuts. Are there any ingredients in Arginine that I should be aware of?",
+            "I am a vegan and follow a plant-based diet. Can I incorporate Arginine into my daily routine?",
+            "I have been using Arginine for a few weeks and have developed a mild rash. Is this a common side effect, and should I discontinue use?"
+        ]
+    },
+    "Coenzyme Q10": {
+        "questions": [
+            "I'm experiencing fatigue and shortness of breath during physical activity. Could a Coenzyme Q10 supplement help improve my energy levels?",
+            "I have a dairy allergy. Can I safely take a Coenzyme Q10 supplement if it's encapsulated in a gelatin capsule?",
+            "I'm on blood thinners. Is it safe for me to take a Coenzyme Q10 supplement?",
+            "I'm considering taking a Coenzyme Q10 supplement to promote heart health. Are there any precautions I should be aware of?",
+            "I've been experiencing frequent headaches and digestive problems. Could these symptoms be related to taking a Coenzyme Q10 supplement?"
+        ]
+    },
+    "Glucosamine": {
+        "questions": [
+            "I've been experiencing joint pain lately, and I'm considering trying glucosamine. I'm not sure if it's right for me. Can you advise me on the benefits and potential risks of glucosamine for joint health?",
+            "I'm allergic to shellfish. Can I take glucosamine supplements safely? If not, are there any alternative supplements that may benefit my joint health?",
+            "I've been having headaches after taking glucosamine. Is this a common side effect? Are there ways to mitigate it?",
+            "I'm looking for a joint health supplement that is suitable for vegans. Does glucosamine meet this requirement, or do you recommend other vegan-friendly options?",
+            "I'm pregnant and experiencing severe joint pain. Is glucosamine safe to use during pregnancy? Are there any precautions I should take?"
+        ]
+    },
+    "Rhodiola Rosea": {
+        "questions": [
+            "I've been experiencing anxiety and difficulty sleeping. Could Rhodiola Rosea help alleviate these symptoms, and are there any side effects I should be aware of?",
+            "I'm allergic to shellfish and wondering if Rhodiola Rosea contains any ingredients that may trigger an allergic reaction?",
+            "I have a history of bipolar disorder. Is it safe for me to take Rhodiola Rosea, considering its potential effects on mood?",
+            "I'm interested in trying Rhodiola Rosea for stress relief. However, I've had problems with insomnia in the past. Can you advise me on whether this supplement might worsen my sleep issues?",
+            "I'm a vegan, and I'm looking for natural supplements that support my health. Is Rhodiola Rosea suitable for a vegan diet?"
+        ]
+    },
+    "Ashwagandha": {
+        "questions": [
+            "I struggle with anxiety and insomnia. Can ashwagandha help alleviate these symptoms, and how does it work?",
+            "I have a shellfish allergy. Is ashwagandha safe for me to consume, given that it may contain traces of shellfish in the manufacturing process?",
+            "I've been feeling fatigued lately. Can ashwagandha help boost my energy levels effectively?",
+            "Are there any serious side effects I should be aware of before taking ashwagandha, particularly for someone with no known health conditions?",
+            "I follow a vegan lifestyle. Is ashwagandha suitable for my dietary needs, and are there any other vegan-friendly supplements that could complement its effects?"
+        ]
+    },
+    "Turmeric Extract": {
+        "questions": [
+            "I have been feeling recurring pain in my joints. Could turmeric extract help alleviate this discomfort, and if so, what dosage would you recommend?",
+            "I'm allergic to certain foods, particularly citrus fruits. Are there any potential cross-reactivity concerns I should be aware of before taking turmeric extract?",
+            "My digestion has been sensitive lately, and I'm prone to stomach upset. Is turmeric extract known to cause digestive issues, and if so, are there any precautions I can take?",
+            "I've heard that turmeric extract may help improve memory and cognitive function. Is there any evidence to support this claim, and if so, what specific benefits can I expect?",
+            "I'm considering taking turmeric extract for its antioxidant properties. Do you recommend using it in conjunction with other supplements, such as vitamin C or E, for enhanced efficacy?"
+        ]
+    },
+    "Milk Thistle": {
+        "questions": [
+            "I've been experiencing fatigue, loss of appetite, and yellowing skin. Could these symptoms be related to poor liver function, and if so, is milk thistle a suitable supplement to consider?",
+            "I have a dairy allergy. Can I still use milk thistle supplements, or are there any alternatives that would be more appropriate?",
+            "What are the common side effects associated with milk thistle supplements, and how can I minimize the risk of experiencing them?",
+            "Is milk thistle safe for vegans to consume, and if so, are there any specific brands or formulations that are recommended?",
+            "I'm taking other medications for a chronic condition. Is it important to inform my doctor before starting milk thistle supplements, and are there any potential interactions I should be aware of?"
+        ]
+    },
+    "Celery Seed Extract": {
+        "questions": [
+            "I'm experiencing joint pain and inflammation. Can Celery Seed Extract help alleviate these symptoms?",
+            "I have a shellfish allergy. Are there any potential risks for me if I take Celery Seed Extract?",
+            "I'm vegan and looking for ways to improve my joint health. Is Celery Seed Extract a good option for me?",
+            "I've never taken any supplements before. What are some common side effects I should be aware of from taking Celery Seed Extract?",
+            "I'm concerned about possible interactions between Celery Seed Extract and my current medications. How can I ensure this supplement is safe for me to take?"
+        ]
+    },
+    "Beta-Alanine": {
+        "questions": [
+            "I suffer from severe muscle fatigue during workouts. Would Beta-Alanine be an effective supplement to enhance my endurance?",
+            "I'm considering consuming Beta-Alanine to boost my exercise performance. However, I have a shellfish allergy. Are there any known cross-reactions with this supplement?",
+            "I'm experiencing a tingling sensation after taking Beta-Alanine. Is this a common side effect and should I be concerned?",
+            "I have a sensitive stomach and am prone to digestive problems. Can taking Beta-Alanine potentially exacerbate these issues?",
+            "As a vegan, I'm looking for supplements that align with my dietary choices. Can you confirm if Beta-Alanine is a suitable option for me?"
+        ]
+    },
+    "Caffeine": {
+        "questions": [
+            "I've been experiencing heart palpitations and anxiety lately. Would caffeine supplements exacerbate my symptoms?",
+            "I have a history of digestive problems. Are there any potential side effects of caffeine supplements that I should be aware of?",
+            "I'm considering taking caffeine supplements for an energy boost. Is it important to consider my current health conditions?",
+            "As a vegan, are there any specific factors or ingredients I should look for when choosing caffeine supplements?",
+            "Is it advisable to combine caffeine supplements with other energy-boosting supplements, like green tea extract?"
+        ]
+    },
+    "Chlorophyll": {
+        "questions": [
+            "I'm experiencing digestive issues like bloating and gas. Can chlorophyll supplements help alleviate these symptoms?",
+            "I have a sensitive stomach. Are there any potential side effects from taking chlorophyll supplements that I should be aware of?",
+            "I'm allergic to certain foods. Are there any ingredients in chlorophyll supplements that I should be cautious about?",
+            "I've heard that chlorophyll supplements can help with detoxification. How exactly does that process work?",
+            "As a vegan, I'm looking for supplements that align with my lifestyle. Are chlorophyll supplements vegan-friendly?"
+        ]
+    },
+    "L-Glutamine": {
+        "questions": [
+            "I've been experiencing frequent stomach aches and bloating after workouts. Could a supplement like L-Glutamine help alleviate these symptoms?",
+            "I have a history of liver problems. Should I avoid taking L-Glutamine supplements?",
+            "I'm allergic to shellfish. Are there any L-Glutamine supplements that are free from shellfish derivatives?",
+            "Can taking L-Glutamine supplements help improve my muscle recovery after intense exercise sessions?",
+            "I'm considering trying L-Glutamine supplements for gut health. What are some potential side effects I should be aware of?"
+        ]
+    },
+    "Melatonin": {
+        "questions": [
+            "I have trouble falling asleep and staying asleep. Can melatonin help with these issues, and if so, what dosage is recommended for my age range?",
+            "I'm concerned about the side effects of melatonin. Are there any specific precautions I should take, especially if I have any underlying health conditions?",
+            "I'm allergic to certain ingredients commonly found in supplements. Is there any way to confirm that melatonin is safe for me to consume?",
+            "I've heard that melatonin can interact with some medications. As someone taking [insert specific medication names], how can I determine if melatonin is safe to use?",
+            "I'm considering taking melatonin to regulate my sleep-wake cycle. Are there any other natural supplements or lifestyle changes that could complement the effects of melatonin for optimal sleep?"
+        ]
+    },
+    "HMB": {
+        "questions": [
+            "I'm experiencing mild nausea and stomach discomfort after taking a new supplement. Could this be a common side effect of HMB?",
+            "I have a history of liver problems. Is HMB safe for me to use?",
+            "I'm allergic to soy. Can I still take HMB supplements if they are vegan-friendly?",
+            "I'm looking to improve my muscle recovery after workouts. Will taking HMB help with this?",
+            "I'm interested in taking HMB to preserve muscle during a period of reduced activity. Is it effective for this purpose?"
+        ]
+    },
+    "Alpha-Lipoic Acid": {
+        "questions": [
+            "I've been experiencing frequent headaches lately. Could taking Alpha-Lipoic Acid help alleviate this symptom?",
+            "I have a shellfish allergy. Are there any ingredients in Alpha-Lipoic Acid that I should be aware of?",
+            "I'm not sure if I have any health conditions. Is it safe for me to take Alpha-Lipoic Acid for antioxidant support?",
+            "What is the recommended dosage of Alpha-Lipoic Acid for someone looking to improve their metabolic health?",
+            "Can Alpha-Lipoic Acid be taken in conjunction with other medications, such as blood thinners?"
+        ]
+    },
+    "Spirulina": {
+        "questions": [
+            "I'm experiencing frequent headaches and fatigue. Could Spirulina help alleviate these symptoms?",
+            "I have a history of stomach problems. Will Spirulina cause any digestive issues?",
+            "I'm allergic to certain types of seaweed. Are there any potential risks for me if I take Spirulina?",
+            "Is Spirulina suitable for vegans who are seeking a nutrient-rich supplement?",
+            "Can Spirulina help cleanse my body of toxins and improve my overall well-being?"
+        ]
+    },
+    "Acai Berry Extract": {
+        "questions": [
+            "I have been experiencing fatigue and low energy levels. Can an Acai Berry Extract supplement help improve my energy and combat fatigue?",
+            "I'm allergic to blueberries and cranberries. Are there any potential risks if I take an Acai Berry Extract supplement?",
+            "I'm a vegan and I'm looking for an antioxidant-rich supplement. Can I safely take Acai Berry Extract?",
+            "I'm concerned about digestive issues. Are there any precautions I should take when considering an Acai Berry Extract supplement?",
+            "I've heard that Acai Berry Extract can have energizing effects. Would it be appropriate to take it before bedtime or could it interfere with my sleep?"
+        ]
+    },
+    "Moringa": {
+        "questions": [
+            "I'm experiencing digestive problems like nausea and stomach pain. Could Moringa supplements be a contributing factor?",
+            "I have a known allergy to peanuts. Are there any potential cross-reactivity concerns with taking Moringa supplements?",
+            "I'm following a strict vegan diet. Is Moringa compatible with my dietary restrictions?",
+            "I'm struggling with inflammation in my joints. Can Moringa supplements help alleviate these symptoms?",
+            "I'm considering taking Moringa supplements but am concerned about potential side effects. What are the most common issues to look out for?"
+        ]
+    },
+    "Bovine Colostrum": {
+        "questions": [
+            "I'm experiencing frequent stomach aches and bloating. I've tried over-the-counter medications, but they haven't helped. Could a health supplement like Bovine Colostrum improve my digestion?",
+            "I have a dairy allergy but suffer from occasional stomach inflammation. Are there any dairy-free alternatives to Bovine Colostrum?",
+            "I often feel sluggish and fatigued, especially in the afternoons. Could Bovine Colostrum provide energy and boost my overall vitality?",
+            "Is Bovine Colostrum safe for long-term use? Are there any potential side effects that I should be aware of?",
+            "I'm pregnant and looking for supplements to support my immune system. Is Bovine Colostrum suitable for use during pregnancy?"
+        ]
+    },
+    "Quercetin": {
+        "questions": [
+            "I'm experiencing frequent headaches and digestive discomfort. Could quercetin be a potential cause?",
+            "I have a known allergy to citrus fruits. Are there any cross-reaction risks to consider before using quercetin?",
+            "I'm generally healthy, but I'm looking for ways to enhance my immune system. Can quercetin help with that?",
+            "As a vegan, I'm always on the lookout for plant-based supplements. Is quercetin suitable for my dietary needs?",
+            "I've heard that quercetin has antioxidant and anti-inflammatory properties. Can it benefit individuals with conditions like osteoarthritis or rheumatoid arthritis?"
+        ]
+    },
+    "Resveratrol": {
+        "questions": [
+            "I have been experiencing frequent headaches and nausea lately. Could taking Resveratrol supplements alleviate these symptoms?",
+            "I am allergic to certain medications. Should I be cautious about taking Resveratrol supplements?",
+            "I am concerned about my overall heart health. I have read that Resveratrol may have cardiovascular benefits, but I want to know if it is suitable for people like me.",
+            "I am following a vegan diet. Is Resveratrol compatible with a vegan lifestyle?",
+            "Do Resveratrol supplements interact with any other medications or supplements I might be taking?"
+        ]
+    },
+    "Kelp Extract": {
+        "questions": [
+            "I'm experiencing fatigue and difficulty concentrating. Can kelp extract help improve my thyroid function and alleviate these symptoms?",
+            "I recently developed a rash after starting a new health supplement. Is it possible that I have an allergic reaction to iodine found in kelp extracts?",
+            "What general health concerns should individuals be aware of before taking kelp extract supplements to ensure they're suitable for their needs?",
+            "I'm considering kelp extract as a vegan source of iodine. Are there any specific dietary restrictions or considerations I need to be mindful of while taking this supplement?",
+            "I'm concerned about side effects associated with kelp extract. What are the most common reactions, and what measures can I take to minimize their occurrence?"
+        ]
+    },
+    "L-Theanine": {
+        "questions": [
+            "I've been experiencing severe stress and anxiety lately. Can L-Theanine help alleviate these symptoms, and are there any precautions I should take?",
+            "I'm allergic to certain types of caffeine. Can I safely take L-Theanine, or will it trigger similar reactions?",
+            "I'm pregnant and looking for natural ways to improve my cognitive function. Is L-Theanine suitable during pregnancy?",
+            "I'm concerned about the potential side effects of L-Theanine. Can you provide detailed information on the likelihood of experiencing drowsiness or headaches?",
+            "I adhere to a strict vegan diet. Can I consume L-Theanine without compromising my dietary preferences?"
+        ]
+    },
+    "Glycine": {
+        "questions": [
+            "I'm experiencing difficulty sleeping and have heard that glycine supplements may help. Do they have any potential side effects that I should be aware of?",
+            "I'm allergic to shellfish. Are there any ingredients in glycine supplements that I should be cautious of?",
+            "I'm a vegan and looking for a sleep aid. Is glycine suitable for my dietary needs?",
+            "I've been taking a glycine supplement for a few days, but I've noticed some stomach discomfort. Is this a common experience?",
+            "I have a medical condition. Are there any precautions I should consider before starting a glycine supplement?"
+        ]
+    },
+    "Hyaluronic Acid": {
+        "questions": [
+            "I'm experiencing severe joint pain and have been considering hyaluronic acid supplements. Can you advise me on the potential benefits and any precautions I should take?",
+            "I'm looking to improve my skin's hydration levels. Could hyaluronic acid be an effective supplement for this purpose, and are there any known side effects to be aware of?",
+            "I have a known allergy to shellfish. Can I safely use hyaluronic acid supplements, or is cross-reactivity a concern?",
+            "I'm a vegan and prioritize ethical consumption. Can you confirm that hyaluronic acid supplements are typically vegan-friendly?",
+            "I've been experiencing gastrointestinal discomfort recently. Can hyaluronic acid supplements contribute to digestive issues, and if so, what measures can I take to mitigate them?"
+        ]
+    },
+    "Lycopene": {
+        "questions": [
+            "I'm experiencing some digestive issues, including nausea and stomach pain. Can lycopene be a potential cause or interact negatively with these symptoms?",
+            "Are there any allergies or health conditions that may prevent me from safely using lycopene supplements?",
+            "I'm generally healthy, but I'm curious about the potential benefits of lycopene for overall prostate health. How can I determine if it's right for me?",
+            "I have a vegan lifestyle and rely on plant-based supplements. Can I still incorporate lycopene into my regimen?",
+            "Is there a specific dosage or intake guideline for lycopene supplements that I should be aware of?"
+        ]
+    },
+    "Glycyrrhizin": {
+        "questions": [
+            "I'm experiencing persistent bloating and discomfort in my digestive system. Could Glycyrrhizin help alleviate these symptoms?",
+            "I have a known allergy to licorice. Can I safely consume Glycyrrhizin, given its potential cross-reactivity with licorice root?",
+            "I'm concerned about the potential side effects of Glycyrrhizin. In particular, I have concerns about elevated blood pressure. Should I avoid taking this supplement if I have a history of hypertension?",
+            "I'm following a vegan diet. Is Glycyrrhizin a suitable supplement for my dietary needs?",
+            "I'm considering Glycyrrhizin for its anti-inflammatory properties. Could it potentially interact with other medications I'm taking for my arthritis?"
+        ]
+    }
+}
