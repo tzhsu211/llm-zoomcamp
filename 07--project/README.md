@@ -22,8 +22,7 @@ All data is in the `data` folder.
 ### Supplement.json
 Data for 53 different types of nutritional supplements has been generated using ChatGPT. Each entry in the dataset includes the following fields:
 * name: The name of the nutritional supplement.
-* purpose: The primary purpose of the nutritional supplement, explaining its benefi
-* Tts.
+* purpose: The primary purpose of the nutritional supplement, explaining its benefits.
 * who_should_not_use: A description of individuals who should avoid the supplement due to potential health risks.
 * common_side_effects: A list of common side effects associated with the supplement.
 * recommended_dosage: The suggested daily dosage for optimal benefits.
@@ -186,6 +185,7 @@ In this code:
 * The hybrid search utilizes both KNN and keyword search to provide more relevant results.
 
 ![image](https://github.com/user-attachments/assets/cee15769-35df-43e1-8599-03e8bb742544)
+
 Here, I use 0.7 as the boost rate in hybrid search (70% of KNN and 30% of keyword search).
 
 ### LLM as a judge
